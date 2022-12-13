@@ -20,8 +20,9 @@
 </head>
 <style>
     p{
-        color: red !important;
-        font-weight: 900;
+        color: #7e8299!important;
+        font-weight: 500!important;
+        font-size: 1.25rem!important;
         
     }
 </style>
