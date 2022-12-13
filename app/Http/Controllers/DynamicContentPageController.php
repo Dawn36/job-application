@@ -193,7 +193,7 @@ class DynamicContentPageController extends Controller
         }
         $subject='New Job Request';
         $fileName='new_job_request_template';
-        $to_email='dawngill08@gmail.com';
+        $to_email='jjosephale@gmail.com';
         $this->sendEmail($to_email,$subject,$fileName,$data='');
 
         return redirect()->route('thankyou_page');
