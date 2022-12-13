@@ -152,7 +152,7 @@
                                                                             </div>
                                                                             <div class="col-md-6 fv-row">
                                                                                 <label class="fs-5 fw-bold mb-2">Attach resume</label>
-                                                                                <input type="file"  class="form-control form-control-solid" name="file" >
+                                                                                <input type="file"  class="form-control form-control-solid" name="file" required>
                                                                             </div>
                                                                         </div>
                                                                     <!--end::Form-->

@@ -17,7 +17,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/dynamic_job_page';
+    public const HOME = '/job_request';
 
     /**
      * Define your route model bindings, pattern filters, etc.

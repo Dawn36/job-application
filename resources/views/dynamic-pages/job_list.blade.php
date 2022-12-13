@@ -72,7 +72,7 @@
                                                         <div class="my-5">
                                                             @for($i=0; $i < count($jobListing); $i++) @php $a=$i; $a++; @endphp 
                                                             <div class="form-check form-check-custom form-check-solid mb-3">
-                                                                <input class="form-check-input" name="jobs" type="radio" id="{{$a}}" value="{{$jobListing[$i]->id}}" checked/>
+                                                                <input class="form-check-input" name="jobs" type="radio" id="{{$a}}" value="{{$jobListing[$i]->id}}" required/>
                                                                 <label class="form-check-label" for="{{$a}}">
                                                                     {{$jobListing[$i]->job_title}} {{$jobListing[$i]->job_number}}
                                                                 </label>

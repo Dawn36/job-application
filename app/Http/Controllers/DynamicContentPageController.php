@@ -248,6 +248,7 @@ class DynamicContentPageController extends Controller
     {
         $jobConfirmation=DB::table('job_confirmation')->where('id', $id)->get();
         $employersInformation=DB::table('employers_information')->where('job_confirmation_id', $id)->get();
+
         return view('partner/job_request_show',compact('jobConfirmation','employersInformation'));
     }
     public function dynamicJobPageSubmit(Request $request)

@@ -172,7 +172,7 @@
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">Best Contact Time</label>
-                                                                                <input type="time" class="form-control form-control-solid" placeholder="" name="best_contact_time" />
+                                                                                <input type="text" class="form-control form-control-solid kt_datepicker_3" placeholder="" name="best_contact_time" />
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">E-Mail Address</label>
@@ -785,6 +785,7 @@
         // -- Date & Time Picker
         $(".kt_datepicker_3").flatpickr({
             enableTime: true,
+            time_24hr: true,
             dateFormat: "Y-m-d H:i",
         });
 
