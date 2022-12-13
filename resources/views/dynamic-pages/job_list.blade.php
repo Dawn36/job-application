@@ -18,6 +18,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/792974b28a.js"></script>
 </head>
+<style>
+    p{
+        color: red !important;
+        font-weight: 900;
+        
+    }
+</style>
 <!--end::Head-->
 <!--begin::Body-->
 
@@ -59,7 +66,7 @@
                                             <div class="mb-17">
                                                
                                                 <!--begin::Description-->
-                                                <div class="m-0">
+                                                <div class="m-0" >
                                                     <!--begin::Text-->
                                                     <p class="fw-bold fs-4 text-gray-600 mb-2">
                                                         <?php echo html_entity_decode($dynamicContentPage->description) ?>
