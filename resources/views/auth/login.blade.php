@@ -98,7 +98,7 @@
 								<input class="form-control form-control-lg form-control-solid" type="password" name="password" autocomplete="off" />
 								<!--end::Input-->
 							</div>
-
+							<div id="html_element"></div>
 							<!--end::Input group-->
 							<!--begin::Actions-->
 							<div class="text-center">
@@ -132,6 +132,18 @@
 	<!--begin::Page Custom Javascript(used by this page)-->
 	<script src="{{ asset('theme/assets/js/custom/authentication/sign-in/general.js')}}"></script>
 	<!--end::Page Custom Javascript-->
+	<script type="text/javascript">
+		var onloadCallback = function() {
+		  grecaptcha.render('html_element', {
+			'sitekey' : 'AIzaSyBFdqY8Tn1gMqXt3h74nGzqVa-XVvTEo8o'
+		  });
+		};
+	  </script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+async defer>
+</script>
+	
+	  
 	<!--end::Javascript-->
 </body>
 <!--end::Body-->

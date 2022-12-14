@@ -79,12 +79,60 @@
                                                             </div>
                                                             <!--begin::Icon-->
                                                         </div>
+                                                        <div class="stepper-item mx-2 my-4" data-kt-stepper-element="nav">
+                                                            <!--begin::Icon-->
+                                                            <div class="stepper-icon w-40px h-40px">
+                                                                <i class="stepper-check fas fa-check"></i>
+                                                                <span class="stepper-number">3</span>
+                                                            </div>
+                                                            <!--begin::Icon-->
+                                                        </div>
+                                                        <div class="stepper-item mx-2 my-4" data-kt-stepper-element="nav">
+                                                            <!--begin::Icon-->
+                                                            <div class="stepper-icon w-40px h-40px">
+                                                                <i class="stepper-check fas fa-check"></i>
+                                                                <span class="stepper-number">4</span>
+                                                            </div>
+                                                            <!--begin::Icon-->
+                                                        </div>
+                                                        <div class="stepper-item mx-2 my-4" data-kt-stepper-element="nav">
+                                                            <!--begin::Icon-->
+                                                            <div class="stepper-icon w-40px h-40px">
+                                                                <i class="stepper-check fas fa-check"></i>
+                                                                <span class="stepper-number">5</span>
+                                                            </div>
+                                                            <!--begin::Icon-->
+                                                        </div>
+                                                        <div class="stepper-item mx-2 my-4" data-kt-stepper-element="nav">
+                                                            <!--begin::Icon-->
+                                                            <div class="stepper-icon w-40px h-40px">
+                                                                <i class="stepper-check fas fa-check"></i>
+                                                                <span class="stepper-number">6</span>
+                                                            </div>
+                                                            <!--begin::Icon-->
+                                                        </div>
+                                                        <div class="stepper-item mx-2 my-4" data-kt-stepper-element="nav">
+                                                            <!--begin::Icon-->
+                                                            <div class="stepper-icon w-40px h-40px">
+                                                                <i class="stepper-check fas fa-check"></i>
+                                                                <span class="stepper-number">7</span>
+                                                            </div>
+                                                            <!--begin::Icon-->
+                                                        </div>
+                                                        <div class="stepper-item mx-2 my-4" data-kt-stepper-element="nav">
+                                                            <!--begin::Icon-->
+                                                            <div class="stepper-icon w-40px h-40px">
+                                                                <i class="stepper-check fas fa-check"></i>
+                                                                <span class="stepper-number">8</span>
+                                                            </div>
+                                                            <!--begin::Icon-->
+                                                        </div>
                                                         <!--end::Step 2-->
                                                     </div>
                                                     <!--end::Nav-->
 
                                                     <!--begin::Form-->
-                                                    <form id="" class="form" method="POST" action="{{ route('job_confirmation') }}" >
+                                                    <form id="kt_create_account_form" class="form" method="POST" action="{{ route('job_confirmation') }}" >
                                                         @csrf
                                                         <!--begin::Group-->
                                                         <div class="mb-5">
@@ -109,37 +157,37 @@
 
                                                                         <div class="row mb-5">
                                                                             <div class="col-md-3">
-                                                                                <label class="fs-5 fw-bold mb-2">Last Name</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="last_name" />
+                                                                                <label class="fs-5 required fw-bold mb-2">Last Name</label>
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="last_name"  />
                                                                             </div>
                                                                             <div class="col-md-3">
-                                                                                <label class="fs-5 fw-bold mb-2">First Name</label>
+                                                                                <label class="fs-5 required fw-bold mb-2">First Name</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="first_name" />
                                                                             </div>
                                                                             <div class="col-md-3">
-                                                                                <label class="fs-5 fw-bold mb-2">Middle Name</label>
+                                                                                <label class="fs-5 required fw-bold mb-2">Middle Name</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="middle_name" />
                                                                             </div>
                                                                             <div class="col-md-3">
-                                                                                <label class="fs-5 fw-bold mb-2">Date</label>
+                                                                                <label class="fs-5 required fw-bold mb-2">Date</label>
                                                                                 <input type="text" class="form-control form-control-solid kt_datepicker_2" placeholder="" name="date" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row mb-5">
                                                                             <div class="col-md-3">
-                                                                                <label class="fs-5 fw-bold mb-2">Current Address</label>
+                                                                                <label class="fs-5 required fw-bold mb-2">Current Address</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="current_address" />
                                                                             </div>
                                                                             <div class="col-md-3">
-                                                                                <label class="fs-5 fw-bold mb-2">City</label>
+                                                                                <label class="fs-5 required fw-bold mb-2">City</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="city" />
                                                                             </div>
                                                                             <div class="col-md-3">
-                                                                                <label class="fs-5 fw-bold mb-2">State</label>
+                                                                                <label class="fs-5 required fw-bold mb-2">State</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="state" />
                                                                             </div>
                                                                             <div class="col-md-3">
-                                                                                <label class="fs-5 fw-bold mb-2">Zip Code</label>
+                                                                                <label class="fs-5 required fw-bold mb-2">Zip Code</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" min="9" max="9" name="zip_code" />
                                                                             </div>
                                                                         </div>
@@ -184,19 +232,27 @@
                                                                                 <label class="fs-5 fw-bold mb-2">Date of Birth</label>
                                                                                 <input type="text" class="form-control form-control-solid kt_datepicker_2" placeholder="" name="date_of_birth" />
                                                                             </div>
-                                                                            <div class="col-md-4">
+                                                                            {{-- <div class="col-md-4">
                                                                                 <label class="fs-5 fw-bold mb-2">Social Security Number (SS#)</label>
                                                                                 <input type="text" disabled class="form-control form-control-solid" placeholder="" name="ssn" />
-                                                                            </div>
-                                                                            <div class="col-md-4">
+                                                                            </div> --}}
+                                                                            {{-- <div class="col-md-4">
                                                                                 <label class="fs-5 fw-bold mb-2">Driving License Number (DL#)</label>
                                                                                 <input type="text" disabled class="form-control form-control-solid" placeholder="" name="dln" />
-                                                                            </div>
+                                                                            </div> --}}
                                                                         </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-column" data-kt-stepper-element="content">
+                                                                <div class="fv-row mb-10">
+
+                                                                        <!-- Start :: APPLICANT INFORMATION -->
+                                                                        <h1>Position Apply For</h1>
+                                                                        <div class="separator mb-8"></div>
                                                                         <div class="row mb-5">
                                                                             <div class="col-md-4">
-                                                                                <label class="fs-5 fw-bold mb-2">Position Apply For</label>
-                                                                                <input class="form-control form-control-solid" readonly value="{{$jobs->job_title}}"  placeholder="" name="position_apply_for" />
+                                                                                <label class="fs-5 fw-bold mb-2">Apply For</label>
+                                                                                <input class="form-control form-control-solid"  readonly value="{{$jobs->job_title}}"  placeholder="" name="position_apply_for" />
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <label class="fs-5 fw-bold mb-2">Type of Work Desired</label>
@@ -258,8 +314,14 @@
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="relative_telephone" />
                                                                             </div>
                                                                         </div>
-                                                                        <!-- End :: APPLICANT INFORMATION -->
+                                                                </div>
+                                                            </div>
+                                                            <!-- End :: APPLICANT INFORMATION -->
+                                                            <div class="flex-column" data-kt-stepper-element="content">
+                                                                <div class="fv-row mb-10">
 
+                                                                        <!-- Start :: APPLICANT INFORMATION -->
+                                                                        {{-- <h1>EDUCATION </h1> --}}
                                                                         <!-- Start :: EDUCATION -->
                                                                         <h1 class="mt-15">EDUCATION <span class="text-danger fw-normal fs-6">(alt least one school must be filled out)</span></h1>
                                                                         <div class="separator mb-8"></div>
@@ -360,7 +422,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <!-- End :: EDUCATION -->
-
+                                                              
                                                                         <!-- Start :: Proficient Computer Skills/Softwares -->
                                                                         <h1 class="mt-15">Proficient Computer Skills/Softwares</h1>
                                                                         <div class="separator mb-8"></div>
@@ -379,12 +441,80 @@
                                                                                 <textarea name="graphic_video_editing_knowledge" class="form-control form-control-solid" cols="30" rows="5"></textarea>
                                                                             </div>
                                                                         </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="flex-column" data-kt-stepper-element="content">
+                                                                    <div class="fv-row mb-10">
+    
+                                                                            <!-- Start :: APPLICANT INFORMATION -->
+                                                                            {{-- <h1>EDUCATION </h1> --}}
                                                                         <!-- End :: Proficient Computer Skills/Softwares -->
 
                                                                         <!-- Start :: EMPLOYERS -->
                                                                         <h1 class="mt-15">EMPLOYERS <span class="text-danger fw-normal fs-6">(List all jobs and contracts held by you during the past five continuous years that we may contact)</span></h1>
                                                                         <div class="separator mb-8"></div>
-
+                                                                        <div class="row mb-5">
+                                                                            <div class="col-md-6">
+                                                                                <label class="fs-5 fw-bold mb-2">Company Name</label>
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="company_name[]" />
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <label class="fs-5 fw-bold mb-2">Telephone <span class="text-danger">(optional)</span></label>
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="e_telephone[]" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mb-5">
+                                                                            <div class="col-md-3">
+                                                                                <label class="fs-5 fw-bold mb-2">Address</label>
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="address[]" />
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <label class="fs-5 fw-bold mb-2">City</label>
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="e_city[]" />
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <label class="fs-5 fw-bold mb-2">State</label>
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="e_state[]" />
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <label class="fs-5 fw-bold mb-2">ZIP Code</label>
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="e_zip_code[]" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mb-5">
+                                                                            <div class="col-md-3">
+                                                                                <label class="fs-5 fw-bold mb-2">Position Held</label>
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="position_held[]" />
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <label class="fs-5 fw-bold mb-2">From</label>
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="MM-DD-YYYY" name="from[]" />
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <label class="fs-5 fw-bold mb-2">To</label>
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="MM-DD-YYYY" name="to[]" />
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <label class="fs-5 fw-bold mb-2">Starting/Ending Salary</label>
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="starting_ending_salary[]" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mb-5">
+                                                                            <div class="col-md-12">
+                                                                                <label class="fs-5 fw-bold mb-2">Duties:</label>
+                                                                                <textarea name="duties[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mb-5">
+                                                                            <div class="col-md-6">
+                                                                                <label class="fs-5 fw-bold mb-2">Reason for Leaving</label>
+                                                                                <textarea name="reason_for_leaving[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <label class="fs-5 fw-bold mb-2">Supervisor Name / Contact</label>
+                                                                                <textarea name="supervisor_name[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>
+                                                                            </div>
+                                                                        </div>
                                                                         <div id="questions">
                                                                             <div class="row mb-5">
                                                                                 <div class="col-md-6">
@@ -461,10 +591,18 @@
                                                                                 <i class="fas fa-plus pe-2"></i> Add Employer
                                                                             </button>
                                                                         </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="flex-column" data-kt-stepper-element="content">
+                                                                    <div class="fv-row mb-10">
+    
+                                                                            <!-- Start :: APPLICANT INFORMATION -->
+                                                                            {{-- <h1>EDUCATION </h1> --}}
+                                                                
                                                                         <!-- End :: EMPLOYERS -->
 
                                                                         <!-- Start :: MILITARY STATUS -->
-                                                                        <h1 class="mt-15">MILITARY STATUS <span class="text-danger fw-normal fs-6">(Optional)</span></h1>
+                                                                        {{-- <h1 class="mt-15">MILITARY STATUS <span class="text-danger fw-normal fs-6">(Optional)</span></h1>
                                                                         <div class="separator mb-8"></div>
 
                                                                         <div class="row mb-5">
@@ -515,11 +653,11 @@
                                                                                 <label class="fs-5 fw-bold mb-2">Reserve Status</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="reserve_status" />
                                                                             </div>
-                                                                        </div>
+                                                                        </div> --}}
                                                                         <!-- End :: MILITARY STATUS -->
 
                                                                         <!-- Start :: CRIMINAL HISTORY -->
-                                                                        <h1 class="mt-15">CRIMINAL HISTORY <span class="text-danger fw-normal fs-6">(Optional)</span></h1>
+                                                                        <h1 class="mt-15">CRIMINAL HISTORY </h1>
                                                                         <div class="separator mb-8"></div>
 
                                                                         <div class="row mb-5">
@@ -550,53 +688,60 @@
                                                                             </div>
                                                                         </div>
                                                                         <!-- End :: CRIMINAL HISTORY -->
-
+                                                                    </div>
+                                                                </div>
+                                                                <div class="flex-column" data-kt-stepper-element="content">
+                                                                    <div class="fv-row mb-10">
+    
+                                                                            <!-- Start :: APPLICANT INFORMATION -->
+                                                                            <h1>Reference </h1>
+                                                                
                                                                         <!-- Start :: References -->
                                                                         <h1 class="mt-10">List below two personal reference other than your family or relatives who they know you at least for the last 4 years</h1>
                                                                         <div class="separator mb-8"></div>
 
                                                                         <div class="row mb-5">
                                                                             <h3>Reference 1</h3>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Name</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="reference_1_name" />
                                                                             </div>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Address</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="reference_1_address" />
                                                                             </div>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Phone</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="reference_1_phone" />
                                                                             </div>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Occupation</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="reference_1_occupation" />
                                                                             </div>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Relationship</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="reference_1_relationship" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row mb-5">
                                                                             <h3>Reference 2</h3>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Name</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="reference_2_name" />
                                                                             </div>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Address</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="reference_2_address" />
                                                                             </div>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Phone</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="reference_2_phone" />
                                                                             </div>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Occupation</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="reference_2_occupation" />
                                                                             </div>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Relationship</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="reference_2_relationship" />
                                                                             </div>
@@ -609,52 +754,58 @@
 
                                                                         <div class="row mb-5">
                                                                             <h3>Reference 1</h3>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Name</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="professional_reference_1_name" />
                                                                             </div>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Address</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="professional_reference_1_address" />
                                                                             </div>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Phone</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="professional_reference_1_phone" />
                                                                             </div>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Occupation</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="professional_reference_1_occupation" />
                                                                             </div>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Relationship</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="professional_reference_1_relationship" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row mb-5">
                                                                             <h3>Reference 2</h3>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Name</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="professional_reference_2_name" />
                                                                             </div>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Address</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="professional_reference_2_address" />
                                                                             </div>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Phone</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="professional_reference_2_phone" />
                                                                             </div>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Occupation</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="professional_reference_2_occupation" />
                                                                             </div>
-                                                                            <div class="col-auto">
+                                                                            <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Relationship</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="professional_reference_2_relationship" />
                                                                             </div>
                                                                         </div>
                                                                         <!-- End :: Professional References -->
-
+                                                                    </div>
+                                                                </div>
+                                                                <div class="flex-column" data-kt-stepper-element="content">
+                                                                    <div class="fv-row mb-10">
+    
+                                                                            <!-- Start :: APPLICANT INFORMATION -->
+                                                                            {{-- <h1>Reference </h1> --}}
                                                                         <!-- Start :: APPLICANT STATEMENT -->
                                                                         <div class="mt-10">
                                                                             <h1>APPLICANT STATEMENT
@@ -696,7 +847,7 @@
                                                             </div>
 
                                                             <div>
-                                                                <button type="submit" class="btn btn-primary" data-kt-stepper-action="submit">Final Submit</button>
+                                                                <button type="button" class="btn btn-primary" data-kt-stepper-action="submit">Final Submit</button>
                                                                 <button type="button" class="btn btn-primary" data-kt-stepper-action="next">Continue</button>
                                                             </div>
                                                         </div>
@@ -755,29 +906,513 @@
     <script src="{{ asset('theme/assets/plugins/custom/datatables/datatables.bundle.js')}}"></script>
     <!--end::Page Vendors Javascript-->
     <!--begin::Page Custom Javascript(used by this page)-->
-    <script src="{{ asset('theme/assets/js/widgets.bundle.js')}}"></script>
-    <script src="{{ asset('theme/assets/js/custom/widgets.js')}}"></script>
-    <script src="{{ asset('theme/assets/js/custom/apps/chat/chat.js')}}"></script>
-    <script src="{{ asset('theme/assets/js/custom/utilities/modals/upgrade-plan.js')}}"></script>
-    <script src="{{ asset('theme/assets/js/custom/utilities/modals/create-app.js')}}"></script>
-    <script src="{{ asset('theme/assets/js/custom/utilities/modals/users-search.js')}}"></script>
+
     <!--end::Page Custom Javascript-->
     <script>
-        // Stepper lement
-        var element = document.querySelector("#kt_stepper_example_basic");
+        // // Stepper lement
+        // var element = document.querySelector("#kt_stepper_example_basic");
 
-        // Initialize Stepper
-        var stepper = new KTStepper(element);
+        // // Initialize Stepper
+        // var stepper = new KTStepper(element);
 
-        // Handle next step
-        stepper.on("kt.stepper.next", function(stepper) {
-            stepper.goNext(); // go next step
-        });
+        // // Handle next step
+        // stepper.on("kt.stepper.next", function(stepper) {
+        //     stepper.goNext(); // go next step
+        // });
 
-        // Handle previous step
-        stepper.on("kt.stepper.previous", function(stepper) {
-            stepper.goPrevious(); // go previous step
-        });
+        // // Handle previous step
+        // stepper.on("kt.stepper.previous", function(stepper) {
+        //     stepper.goPrevious(); // go previous step
+        // });
+        var i=0;
+var KTCreateAccount = (function() {
+    var e,
+        t,
+        i,
+        o,
+        s,
+        r,
+        a = [];
+    return {
+        init: function() {
+            (e = document.querySelector("#kt_modal_create_account")) &&
+            new bootstrap.Modal(e),
+                (t = document.querySelector("#kt_stepper_example_basic")),
+                (i = t.querySelector("#kt_create_account_form")),
+                (o = t.querySelector('[data-kt-stepper-action="submit"]')),
+                (s = t.querySelector('[data-kt-stepper-action="next"]')),
+                (r = new KTStepper(t)).on("kt.stepper.changed", function(e) {
+                    9 === r.getCurrentStepIndex() ?
+                        (o.classList.remove("d-none"),
+                            o.classList.add("d-inline-block"),
+                            s.classList.add("d-none")) :
+                        10 === r.getCurrentStepIndex() ?
+                        (o.classList.add("d-none"), s.classList.add("d-none")) :
+                        (o.classList.remove("d-inline-block"),
+                            o.classList.remove("d-none"),
+                            s.classList.remove("d-none"));
+                }),
+                r.on("kt.stepper.next", function(e) {
+                    console.log("stepper.next");
+                    var t = a[e.getCurrentStepIndex() - 1];
+                    t
+                        ?
+                        t.validate().then(function(t) {
+                            console.log("validated!"),
+                                "Valid" == t ?
+                                (e.goNext()) :
+                                Swal.fire({
+                                    text: "Sorry, looks like there are some errors detected, please try again.",
+                                    icon: "error",
+                                    buttonsStyling: !1,
+                                    confirmButtonText: "Ok, got it!",
+                                    customClass: { confirmButton: "btn btn-light" },
+                                }).then(function() {
+                                    // KTUtil.scrollTop();
+                                });
+                        }) :
+                        (e.goNext());
+                }),
+                r.on("kt.stepper.previous", function(e) {
+                    console.log("stepper.previous"), e.goPrevious();
+                }),
+                a.push(
+                    FormValidation.formValidation(i, {
+                        fields: {
+                            lasta_name: {
+                                validators: {
+                                    notEmpty: { message: "Account type is required" },
+                                },
+                            },
+                        },
+                        plugins: {
+                            trigger: new FormValidation.plugins.Trigger(),
+                            bootstrap: new FormValidation.plugins.Bootstrap5({
+                                rowSelector: ".fv-row",
+                                eleInvalidClass: "",
+                                eleValidClass: "",
+                            }),
+                        },
+                    })
+                ),
+                a.push(
+                    FormValidation.formValidation(i, {
+                        fields: {
+                            last_name: {
+                                validators: { notEmpty: { message: "Last name is required" } },
+                            },
+                            first_name: {
+                                validators: {
+                                    notEmpty: { message: "First name is required" },
+                                },
+                            },
+                            middle_name: {
+                                validators: {
+                                    notEmpty: { message: "Middle plan is required" },
+                                },
+                            },
+                            date: {
+                                validators: {
+                                    notEmpty: { message: "Date is required" },
+                                },
+                            },
+                            current_address: {
+                                validators: {
+                                    notEmpty: { message: "Current address is required" },
+                                },
+                            },
+                            city: {
+                                validators: {
+                                    notEmpty: { message: "City is required" },
+                                },
+                            },
+                            state: {
+                                validators: {
+                                    notEmpty: { message: "State is required" },
+                                },
+                            },
+                            zip_code: {
+                                validators: {
+                                    notEmpty: { message: "Zip code is required" },
+                                },
+                            },
+                            previous_address: {
+                                validators: {
+                                    notEmpty: { message: "Previous address is required" },
+                                },
+                            },
+                            previous_city: {
+                                validators: {
+                                    notEmpty: { message: "Previous city is required" },
+                                },
+                            },
+                            previous_state: {
+                                validators: {
+                                    notEmpty: { message: "Previous state is required" },
+                                },
+                            },
+                            previous_zip_code: {
+                                validators: {
+                                    notEmpty: { message: "Previous zip code is required" },
+                                },
+                            },
+                            telephone: {
+                                validators: {
+                                    notEmpty: { message: "Telephone is required" },
+                                },
+                            },
+                            best_contact_time: {
+                                validators: {
+                                    notEmpty: { message: "Best contact time is required" },
+                                },
+                            },
+                            e_mail_address: {
+                                validators: {
+                                    notEmpty: { message: "E-mail Address is required" },
+                                },
+                            },
+                            date_of_birth: {
+                                validators: {
+                                    notEmpty: { message: "Date of birth is required" },
+                                },
+                            },
+                        },
+                        plugins: {
+                            trigger: new FormValidation.plugins.Trigger(),
+                            bootstrap: new FormValidation.plugins.Bootstrap5({
+                                rowSelector: ".fv-row",
+                                eleInvalidClass: "",
+                                eleValidClass: "",
+                            }),
+                        },
+                    })
+                ),
+                a.push(
+                    FormValidation.formValidation(i, {
+                        fields: {
+                            position_apply_for: {
+                                validators: {
+                                    notEmpty: { message: "Apply for is required" },
+                                },
+                            },
+                            type_of_work_desired: {
+                                validators: {
+                                    notEmpty: { message: "Type of work desired is required" },
+                                },
+                            },
+                            job_post_number: {
+                                validators: {
+                                    notEmpty: { message: "Job post number is required" },
+                                },
+                            },
+                            available_to_begin_work: {
+                                validators: {
+                                    notEmpty: { message: "When Are You Available to Begin Work is required" },
+                                },
+                            },
+                            work_overtime: {
+                                validators: {
+                                    notEmpty: { message: "Willing to Work Overtime is required" },
+                                },
+                            },
+                            authorized_age: {
+                                validators: {
+                                    notEmpty: { message: "If hired, can you provide evidence that you are authorized and of legal age to work in the United States is required" },
+                                },
+                            },
+                            background_check: {
+                                validators: {
+                                    notEmpty: { message: "In case of emergency notify is required" },
+                                },
+                            },
+                            emergency_telephone: {
+                                validators: {
+                                    notEmpty: { message: "Telephone is required" },
+                                },
+                            },
+                            name_of_nearest_relative: {
+                                validators: {
+                                    notEmpty: { message: "Name of nearest relative is required" },
+                                },
+                            },
+                            relative_telephone: {
+                                validators: {
+                                    notEmpty: { message: "Relative telephone is required" },
+                                },
+                            },
+                            
+                        },
+                        plugins: {
+                            trigger: new FormValidation.plugins.Trigger(),
+                            bootstrap: new FormValidation.plugins.Bootstrap5({
+                                rowSelector: ".fv-row",
+                                eleInvalidClass: "",
+                                eleValidClass: "",
+                            }),
+                        },
+                    })
+                ),
+                a.push(
+                    FormValidation.formValidation(i, {
+                        fields: {
+                            high_school_name: {
+                                validators: {
+                                    notEmpty: { message: "School name/Location is required" },
+                                },
+                            },
+                            high_school_course_of_study: {
+                                validators: {
+                                    notEmpty: { message: "Course of study is required" },
+                                },
+                            },
+                            high_school_year_completed: {
+                                validators: { notEmpty: { message: "No. Years Completed is required" } },
+                            },
+                            high_school_degree: {
+                                validators: { notEmpty: { message: "Degree/Certificate is required" } },
+                            },
+                            computer_knowledge: {
+                                validators: { notEmpty: { message: "List any computer knowledge that you are good at is required" } },
+                            },
+                            programing_knowledge: {
+                                validators: { notEmpty: { message: "List any programing knowledge that you are good at is required" } },
+                            },
+                            graphic_video_editing_knowledge: {
+                                validators: { notEmpty: { message: "List any graphic/ video editing knowledge that you are good at is required" } },
+                            },
+                           
+                        },
+                        plugins: {
+                            trigger: new FormValidation.plugins.Trigger(),
+                            bootstrap: new FormValidation.plugins.Bootstrap5({
+                                rowSelector: ".fv-row",
+                                eleInvalidClass: "",
+                                eleValidClass: "",
+                            }),
+                        },
+                    })
+                ),
+                a.push(
+                    FormValidation.formValidation(i, {
+                        fields: {
+                            company_name: {
+                                validators: {
+                                    notEmpty: { message: "Company name is required" },
+                                },
+                            },
+                            address: {
+                                validators: { notEmpty: { message: "Address is required" } },
+                            },
+                            e_city: {
+                                validators: { notEmpty: { message: "City is required" } },
+                            },
+                            e_state: {
+                                validators: { notEmpty: { message: "State is required" } },
+                            },
+                            e_zip_code: {
+                                validators: { notEmpty: { message: "Zip Code is required" } },
+                            },
+                            position_held: {
+                                validators: { notEmpty: { message: "Position held is required" } },
+                            },
+                            from: {
+                                validators: { notEmpty: { message: "From is required" } },
+                            },
+                            to: {
+                                validators: { notEmpty: { message: "To is required" } },
+                            },
+                            starting_ending_salary: {
+                                validators: { notEmpty: { message: "Starting/ending salary is required" } },
+                            },
+                            duties: {
+                                validators: { notEmpty: { message: "Duties is required" } },
+                            },
+                            reason_for_leaving: {
+                                validators: { notEmpty: { message: "Reason for leaving is required" } },
+                            },
+                            supervisor_name: {
+                                validators: { notEmpty: { message: "Supervisor Name / Contact is required" } },
+                            },
+                           
+                        },
+                        plugins: {
+                            trigger: new FormValidation.plugins.Trigger(),
+                            bootstrap: new FormValidation.plugins.Bootstrap5({
+                                rowSelector: ".fv-row",
+                                eleInvalidClass: "",
+                                eleValidClass: "",
+                            }),
+                        },
+                    })
+                ),
+                a.push(
+                    FormValidation.formValidation(i, {
+                        fields: {
+                            criminal_offense: {
+                                validators: {
+                                    notEmpty: { message: "Have you ever been convicted of a criminal offense is required" },
+                                },
+                            },
+                            criminal_actions_pending: {
+                                validators: { notEmpty: { message: "Do you currently have any criminal actions pending in which you are the Defendant? (Not Applicable to California Applicants) Check One is required" } },
+                            },
+                            probation_or_parole: {
+                                validators: { notEmpty: { message: "Are you currently on probation or parole? Check One is required" } },
+                            },
+                            explain_the_nature_of_the_offense: {
+                                validators: { notEmpty: { message: "If you answered Yes to any of the above questions, please explain the nature of the offense and provide the date of the offense and the county and state in which it occurred is required" } },
+                            },
+                        },
+                        plugins: {
+                            trigger: new FormValidation.plugins.Trigger(),
+                            bootstrap: new FormValidation.plugins.Bootstrap5({
+                                rowSelector: ".fv-row",
+                                eleInvalidClass: "",
+                                eleValidClass: "",
+                            }),
+                        },
+                    })
+                ),
+                a.push(
+                    FormValidation.formValidation(i, {
+                        fields: {
+                            reference_1_name: {
+                                validators: {
+                                    notEmpty: { message: "Name is required" },
+                                },
+                            },
+                            reference_1_address: {
+                                validators: { notEmpty: { message: "Address is required" } },
+                            },
+                            reference_1_phone: {
+                                validators: { notEmpty: { message: "Phone is required" } },
+                            },
+                            reference_1_occupation: {
+                                validators: { notEmpty: { message: "Occupation is required" } },
+                            },
+                            reference_1_relationship: {
+                                validators: { notEmpty: { message: "Relationship is required" } },
+                            },
+                            reference_2_name: {
+                                validators: {
+                                    notEmpty: { message: "Name is required" },
+                                },
+                            },
+                            reference_2_address: {
+                                validators: { notEmpty: { message: "Address is required" } },
+                            },
+                            reference_2_phone: {
+                                validators: { notEmpty: { message: "Phone is required" } },
+                            },
+                            reference_2_occupation: {
+                                validators: { notEmpty: { message: "Occupation is required" } },
+                            },
+                            reference_2_relationship: {
+                                validators: { notEmpty: { message: "Relationship is required" } },
+                            },
+                            professional_reference_1_name: {
+                                validators: {
+                                    notEmpty: { message: "Name is required" },
+                                },
+                            },
+                            professional_reference_1_address: {
+                                validators: { notEmpty: { message: "Address is required" } },
+                            },
+                            professional_reference_1_phone: {
+                                validators: { notEmpty: { message: "Phone is required" } },
+                            },
+                            professional_reference_1_occupation: {
+                                validators: { notEmpty: { message: "Occupation is required" } },
+                            },
+                            professional_reference_1_relationship: {
+                                validators: { notEmpty: { message: "Relationship is required" } },
+                            },
+                            professional_reference_2_name: {
+                                validators: {
+                                    notEmpty: { message: "Name is required" },
+                                },
+                            },
+                            professional_reference_2_address: {
+                                validators: { notEmpty: { message: "Address is required" } },
+                            },
+                            professional_reference_2_phone: {
+                                validators: { notEmpty: { message: "Phone is required" } },
+                            },
+                            professional_reference_2_occupation: {
+                                validators: { notEmpty: { message: "Occupation is required" } },
+                            },
+                            professional_reference_2_relationship: {
+                                validators: { notEmpty: { message: "Relationship is required" } },
+                            },
+                        },
+                        plugins: {
+                            trigger: new FormValidation.plugins.Trigger(),
+                            bootstrap: new FormValidation.plugins.Bootstrap5({
+                                rowSelector: ".fv-row",
+                                eleInvalidClass: "",
+                                eleValidClass: "",
+                            }),
+                        },
+                    })
+                ),
+                a.push(
+                    FormValidation.formValidation(i, {
+                        fields: {
+                            print_name: {
+                                validators: {
+                                    notEmpty: { message: "Print name is required" },
+                                },
+                            },
+                            signature_date: {
+                                validators: { notEmpty: { message: "Signature date is required" } },
+                            },
+                        },
+                        plugins: {
+                            trigger: new FormValidation.plugins.Trigger(),
+                            bootstrap: new FormValidation.plugins.Bootstrap5({
+                                rowSelector: ".fv-row",
+                                eleInvalidClass: "",
+                                eleValidClass: "",
+                            }),
+                        },
+                    })
+                ),
+                o.addEventListener("click", function(e) {
+                    a[7].validate().then(function(t) {
+                        console.log("validated!"),
+                            "Valid" == t ? $("#kt_create_account_form").submit() :
+                            Swal.fire({
+                                text: "Sorry, looks like there are some errors detected, please try again.",
+                                icon: "error",
+                                buttonsStyling: !1,
+                                confirmButtonText: "Ok, got it!",
+                                customClass: { confirmButton: "btn btn-light" },
+                            }).then(function() {
+                                // KTUtil.scrollTop();
+                            });
+                    });
+                }),
+                $(i.querySelector('[name="card_expiry_month"]')).on(
+                    "change",
+                    function() {
+                        a[3].revalidateField("card_expiry_month");
+                    }
+                ),
+                $(i.querySelector('[name="card_expiry_year"]')).on(
+                    "change",
+                    function() {
+                        a[3].revalidateField("card_expiry_year");
+                    }
+                ),
+                $(i.querySelector('[name="business_type"]')).on("change", function() {
+                    a[2].revalidateField("business_type");
+                });
+        },
+    };
+})();
+KTUtil.onDOMContentLoaded(function() {
+    KTCreateAccount.init();
+});
 
         // -- Date Picker
         $(".kt_datepicker_2").flatpickr({});

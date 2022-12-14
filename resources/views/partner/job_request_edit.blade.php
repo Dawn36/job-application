@@ -5,7 +5,7 @@
     <div class="d-flex flex-column scroll-y me-n7 pe-7" id="" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-max-height="auto" data-kt-scroll-dependencies="#kt_modal_add_user_header" data-kt-scroll-wrappers="#kt_modal_add_user_scroll" data-kt-scroll-offset="300px">
         <div class="fv-row mb-7">
             <label class="fs-5 fw-bold mb-2">Social Security Number (SS#)</label>
-            <input type="text" class="form-control form-control-solid" value="{{$jobConfirmation[0]->social_security_number}}" placeholder="" name="social_security_number" />
+            <input type="text" class="form-control form-control-solid" value="{{$jobConfirmation[0]->social_security_number}}" placeholder="" id="social_security_number" name="social_security_number" />
         </div>
         <div class="fv-row mb-7">
             <label class="fs-5 fw-bold mb-2">Driving License Number (DL#)</label>
@@ -20,3 +20,7 @@
     </div>
     <!--end::Actions-->
 </form>
+<script src="{{ asset('theme/assets/js/jquery.inputmask.bundle.js')}}"></script>
+<script>
+    $("#social_security_number").inputmask({"mask": "999-99-9999"});
+    </script>
