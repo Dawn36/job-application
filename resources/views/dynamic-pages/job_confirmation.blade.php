@@ -155,7 +155,7 @@
                                                                         <h1>APPLICANT INFORMATION</h1>
                                                                         <div class="separator mb-8"></div>
 
-                                                                        <div class="row mb-5">
+                                                                        <div class="row mb-5" style="background-color: #f0f0f0;">
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 required fw-bold mb-2">Last Name</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="last_name"  />
@@ -191,7 +191,7 @@
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" min="9" max="9" name="zip_code" />
                                                                             </div>
                                                                         </div>
-                                                                        <div class="row mb-5">
+                                                                        <div class="row mb-5" style="background-color: #f0f0f0;">
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">Previous Address</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="previous_address" />
@@ -227,7 +227,7 @@
                                                                                 <input class="form-control form-control-solid" placeholder="" name="e_mail_address" />
                                                                             </div>
                                                                         </div>
-                                                                        <div class="row mb-5">
+                                                                        <div class="row mb-5" style="background-color: #f0f0f0;">
                                                                             <div class="col-md-4">
                                                                                 <label class="fs-5 fw-bold mb-2">Date of Birth</label>
                                                                                 <input type="text" class="form-control form-control-solid kt_datepicker_2" placeholder="" name="date_of_birth" />
@@ -249,7 +249,7 @@
                                                                         <!-- Start :: APPLICANT INFORMATION -->
                                                                         <h1>Position Apply For</h1>
                                                                         <div class="separator mb-8"></div>
-                                                                        <div class="row mb-5">
+                                                                        <div class="row mb-5" style="background-color: #f0f0f0;">
                                                                             <div class="col-md-4">
                                                                                 <label class="fs-5 fw-bold mb-2">Apply For</label>
                                                                                 <input class="form-control form-control-solid"  readonly value="{{$jobs->job_title}}"  placeholder="" name="position_apply_for" />
@@ -280,7 +280,7 @@
                                                                                 </select>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="row mb-5">
+                                                                        <div class="row mb-5" style="background-color: #f0f0f0;">
                                                                             <div class="col-md-6">
                                                                                 <label class="fs-5 fw-bold mb-2">If hired, can you provide evidence that you are authorized and of legal age to work in the United States?</label>
                                                                                 <select name="authorized_age" class="form-control form-control-solid">
@@ -327,7 +327,7 @@
                                                                         <div class="separator mb-8"></div>
 
                                                                         <h3>HIGH SCHOOL</h3>
-                                                                        <div class="row mb-5">
+                                                                        <div class="row mb-5" style="background-color: #f0f0f0;">
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">SCHOOL NAME/LOCATION</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="high_school_name" />
@@ -365,7 +365,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <h3>COLLEGE</h3>
-                                                                        <div class="row mb-5">
+                                                                        <div class="row mb-5" style="background-color: #f0f0f0;">
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">SCHOOL NAME/LOCATION</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="college_name" />
@@ -403,7 +403,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <h3>OTHER</h3>
-                                                                        <div class="row mb-5">
+                                                                        <div class="row mb-5" style="background-color: #f0f0f0;">
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">SCHOOL NAME/LOCATION</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="other_name" />
@@ -453,7 +453,7 @@
                                                                         <!-- Start :: EMPLOYERS -->
                                                                         <h1 class="mt-15">EMPLOYERS <span class="text-danger fw-normal fs-6">(List all jobs and contracts held by you during the past five continuous years that we may contact)</span></h1>
                                                                         <div class="separator mb-8"></div>
-                                                                        <div class="row mb-5">
+                                                                        <div class="row mb-5" style="background-color: #f0f0f0;">
                                                                             <div class="col-md-6">
                                                                                 <label class="fs-5 fw-bold mb-2">Company Name</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="company_name[]" />
@@ -481,7 +481,7 @@
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="e_zip_code[]" />
                                                                             </div>
                                                                         </div>
-                                                                        <div class="row mb-5">
+                                                                        <div class="row mb-5" style="background-color: #f0f0f0;">
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">Position Held</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="position_held[]" />
@@ -505,7 +505,7 @@
                                                                                 <textarea name="duties[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="row mb-5">
+                                                                        <div class="row mb-5" style="background-color: #f0f0f0;">
                                                                             <div class="col-md-6">
                                                                                 <label class="fs-5 fw-bold mb-2">Reason for Leaving</label>
                                                                                 <textarea name="reason_for_leaving[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>
@@ -526,7 +526,7 @@
                                                                                     <input type="text" class="form-control form-control-solid" placeholder="" name="e_telephone[]" />
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="row mb-5">
+                                                                            <div class="row mb-5" style="background-color: #f0f0f0;">
                                                                                 <div class="col-md-3">
                                                                                     <label class="fs-5 fw-bold mb-2">Address</label>
                                                                                     <input type="text" class="form-control form-control-solid" placeholder="" name="address[]" />
@@ -562,7 +562,7 @@
                                                                                     <input type="text" class="form-control form-control-solid" placeholder="" name="starting_ending_salary[]" />
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="row mb-5">
+                                                                            <div class="row mb-5" style="background-color: #f0f0f0;">
                                                                                 <div class="col-md-12">
                                                                                     <label class="fs-5 fw-bold mb-2">Duties:</label>
                                                                                     <textarea name="duties[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>
@@ -660,8 +660,8 @@
                                                                         <h1 class="mt-15">CRIMINAL HISTORY </h1>
                                                                         <div class="separator mb-8"></div>
 
-                                                                        <div class="row mb-5">
-                                                                            <div class="col-md-12 mb-5">
+                                                                        <div class="row mb-5" >
+                                                                            <div class="col-md-12 mb-5" style="background-color: #f0f0f0;">
                                                                                 <label class="fs-5 fw-bold mb-2">Have you ever been convicted of a criminal offense?</label>
                                                                                 <select name="criminal_offense" class="form-control form-control-solid">
                                                                                     <option value="Yes">Yes</option>
@@ -675,7 +675,7 @@
                                                                                     <option value="No">No</option>
                                                                                 </select>
                                                                             </div>
-                                                                            <div class="col-md-12 mb-5">
+                                                                            <div class="col-md-12 mb-5" style="background-color: #f0f0f0;">
                                                                                 <label class="fs-5 fw-bold mb-2">Are you currently on probation or parole? Check One:</label>
                                                                                 <select name="probation_or_parole" class="form-control form-control-solid">
                                                                                     <option value="Yes">Yes</option>
@@ -700,7 +700,7 @@
                                                                         <h1 class="mt-10">List below two personal reference other than your family or relatives who they know you at least for the last 4 years</h1>
                                                                         <div class="separator mb-8"></div>
 
-                                                                        <div class="row mb-5">
+                                                                        <div class="row mb-5" style="background-color: #f0f0f0;"> 
                                                                             <h3>Reference 1</h3>
                                                                             <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Name</label>
@@ -752,7 +752,7 @@
                                                                         <h1 class="mt-10">List below two business or professional reference who have knowledge of your work performance within the last four years.</h1>
                                                                         <div class="separator mb-8"></div>
 
-                                                                        <div class="row mb-5">
+                                                                        <div class="row mb-5" style="background-color: #f0f0f0;">
                                                                             <h3>Reference 1</h3>
                                                                             <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Name</label>
@@ -1433,7 +1433,7 @@ KTUtil.onDOMContentLoaded(function() {
         $("#rowAdder").click(function() {
             newRowAdd =
                 '<div id="questions">' +
-                '<div class="row mb-5">' +
+                '<div class="row mb-5" style="background-color: #f0f0f0;">' +
                 '<div class="col-md-6">' +
                 '<label class="fs-5 fw-bold mb-2">Company Name</label>' +
                 '<input type="text" class="form-control form-control-solid" placeholder="" name="company_name[]" />' +
@@ -1461,7 +1461,7 @@ KTUtil.onDOMContentLoaded(function() {
                 '<input type="text" class="form-control form-control-solid" placeholder="" name="e_zip_code[]" />' +
                 '</div>' +
                 '</div>' +
-                '<div class="row mb-5">' +
+                '<div class="row mb-5" style="background-color: #f0f0f0;">' +
                 '<div class="col-md-3">' +
                 '<label class="fs-5 fw-bold mb-2">Position Held</label>' +
                 '<input type="text" class="form-control form-control-solid" placeholder="" name="position_held[]" />' +
@@ -1485,7 +1485,7 @@ KTUtil.onDOMContentLoaded(function() {
                 '<textarea name="duties[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>' +
                 '</div>' +
                 '</div>' +
-                '<div class="row mb-5">' +
+                '<div class="row mb-5" style="background-color: #f0f0f0;">' +
                 '<div class="col-md-6">' +
                 '<label class="fs-5 fw-bold mb-2">Reason for Leaving</label>' +
                 '<textarea name="reason_for_leaving[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>' +
