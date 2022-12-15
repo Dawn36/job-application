@@ -822,11 +822,11 @@
                                                                                 Information and acknowledge that I understand the terms set forth therein. I understand that
                                                                                 this employment application is not valid without my signature.</p>
                                                                             <div class="row my-5">
-                                                                                <div class="col">
+                                                                                <div class="col-lg-6">
                                                                                     <label class="fs-5 fw-bold mb-2">Print Name</label>
                                                                                     <input type="text" class="form-control form-control-solid" placeholder="" name="print_name" />
                                                                                 </div>
-                                                                                <div class="col">
+                                                                                <div class="col-lg-6">
                                                                                     <label class="fs-5 fw-bold mb-2">Signature Date</label>
                                                                                     <input type="text" class="form-control form-control-solid" placeholder="MM-DD-YYYY" name="signature_date" />
                                                                                 </div>
@@ -1125,6 +1125,11 @@ var KTCreateAccount = (function() {
                                     notEmpty: { message: "In case of emergency notify is required" },
                                 },
                             },
+                            emergency: {
+                                validators: {
+                                    notEmpty: { message: "In case of emergency notify is required" },
+                                },
+                            },
                             emergency_telephone: {
                                 validators: {
                                     notEmpty: { message: "Telephone is required" },
@@ -1195,42 +1200,42 @@ var KTCreateAccount = (function() {
                 a.push(
                     FormValidation.formValidation(i, {
                         fields: {
-                            company_name: {
+                            'company_name[]': {
                                 validators: {
                                     notEmpty: { message: "Company name is required" },
                                 },
                             },
-                            address: {
+                            'address[]': {
                                 validators: { notEmpty: { message: "Address is required" } },
                             },
-                            e_city: {
+                            'e_city[]': {
                                 validators: { notEmpty: { message: "City is required" } },
                             },
-                            e_state: {
+                            'e_state[]': {
                                 validators: { notEmpty: { message: "State is required" } },
                             },
-                            e_zip_code: {
+                            'e_zip_code[]': {
                                 validators: { notEmpty: { message: "Zip Code is required" } },
                             },
-                            position_held: {
+                            'position_held[]': {
                                 validators: { notEmpty: { message: "Position held is required" } },
                             },
-                            from: {
+                            'from[]': {
                                 validators: { notEmpty: { message: "From is required" } },
                             },
-                            to: {
+                            'to[]': {
                                 validators: { notEmpty: { message: "To is required" } },
                             },
-                            starting_ending_salary: {
+                            'starting_ending_salary[]': {
                                 validators: { notEmpty: { message: "Starting/ending salary is required" } },
                             },
-                            duties: {
+                            'duties[]': {
                                 validators: { notEmpty: { message: "Duties is required" } },
                             },
-                            reason_for_leaving: {
+                            'reason_for_leaving[]': {
                                 validators: { notEmpty: { message: "Reason for leaving is required" } },
                             },
-                            supervisor_name: {
+                            'supervisor_name[]': {
                                 validators: { notEmpty: { message: "Supervisor Name / Contact is required" } },
                             },
                            

@@ -20,11 +20,14 @@
 </head>
 <style>
     p{
-        color: #7e8299!important;
         font-weight: 500!important;
         font-size: 1.25rem!important;
         
     }
+    .form-check.form-check-solid .form-check-input {
+    border: 0;
+    background-color: white;
+}
 </style>
 <!--end::Head-->
 <!--begin::Body-->
@@ -67,13 +70,18 @@
                                             <div class="mb-17">
                                                
                                                 <!--begin::Description-->
-                                                <div class="m-0" >
+                                                <div class="m-0" style="    background-color: #f0f0f0;
+                                                padding: 10px;">
                                                     <!--begin::Text-->
-                                                    <p class="fw-bold fs-4 text-gray-600 mb-2">
-                                                        <?php echo html_entity_decode($dynamicContentPage->description) ?>
-                                                    </p>
-
-                                                    <p class="fw-bold fs-4 text-gray-600 mt-10 mb-2">Select the Job title # you are Appling for</p>
+                                                    <?php echo html_entity_decode($dynamicContentPage->description) ?>
+                                                    {{-- <p class="fw-bold fs-4 text-gray-600 mb-2">
+                                                    </p> --}}
+                                                </div>
+                                                <div class="row" style="justify-content: center;">
+                                                    <div class="col-lg-5">
+                                                        <div class="mt-4" style="background-color: #f0f0f0;
+                                                padding: 10px;">
+                                                    <p class="fw-bold fs-4 text-dark mt-10 mb-2">Select the Job title # you are Appling for</p>
                                                     <!--end::Text-->
                                                    
                                                     <!-- Start::Jobs List -->
@@ -95,6 +103,9 @@
                                                         </div>
                                                         <!-- End::Jobs List -->
                                                     </div>
+                                                     </div> 
+                                                    </div>
+                                                
                                                     <!--end::Description-->
                                                     
                                                     <!--begin::Apply-->
