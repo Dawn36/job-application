@@ -1552,7 +1552,7 @@ KTUtil.onDOMContentLoaded(function() {
                 '</div>' +
                 '<div class="col-md-4">' +
                 '<label class="fs-5 fw-bold mb-2">Telephone </label>' +
-                '<input type="text" class="form-control form-control-solid" placeholder="" name="e_telephone[]" />' +
+                '<input type="text" class="form-control form-control-solid masking" placeholder="" name="e_telephone[]" />' +
                 '</div>' +
                 '<div class="col-md-4">' +
                 '<label class="fs-5 fw-bold mb-2">Supervisor Name / Contact</label>' +
