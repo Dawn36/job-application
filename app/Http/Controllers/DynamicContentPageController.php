@@ -13,7 +13,7 @@ class DynamicContentPageController extends Controller
 {
     public function partnerListing()
     {
-        $partnerList=DB::table('partner_form')->get();
+        $partnerList=DB::table('partner_form')->orderby('id','desc')->get();
         return view('partner/partner_list',compact('partnerList'));
     }
     public function partnerDelete($id)
@@ -226,7 +226,7 @@ class DynamicContentPageController extends Controller
     }
     public function jobRequest()
     {
-        $jobConfirmation=DB::table('job_confirmation')->get();
+        $jobConfirmation=DB::table('job_confirmation')->orderby('id','desc')->get();
         return view('partner/job_request',compact('jobConfirmation'));
     }
     public function jobRequestEdit(Request $request)
