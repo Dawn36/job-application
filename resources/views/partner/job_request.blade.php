@@ -122,6 +122,7 @@
                                             <th>City</th>
                                             <th>State</th>
                                             <th>Zip Code</th>
+                                            <th>View Resume</th>
                                             <th>View Application</th>
                                             <th>Review Status</th>
                                             <th>Actions</th>
@@ -143,6 +144,20 @@
                                             <td>{{$jobConfirmation[$i]->city}}</td>
                                             <td>{{$jobConfirmation[$i]->state}}</td>
                                             <td>{{$jobConfirmation[$i]->zip_code}}</td>
+                                            <td>
+                                                <center>
+                                                    <a href="{{asset($jobConfirmation[$i]->path)}}" class="btn btn-icon btn-sm btn-color-gray-400 btn-active-icon-primary" data-bs-toggle="tooltip" data-bs-original-title="View Resume">
+                                                        <!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+                                                        <span class="svg-icon svg-icon-1">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path opacity="0.3" d="M19 22H5C4.4 22 4 21.6 4 21V3C4 2.4 4.4 2 5 2H14L20 8V21C20 21.6 19.6 22 19 22Z" fill="black" />
+                                                                <path d="M15 8H20L14 2V7C14 7.6 14.4 8 15 8Z" fill="black" />
+                                                            </svg>
+                                                        </span>
+                                                        <!--end::Svg Icon-->
+                                                    </a>
+                                                </center>
+                                            </td>
                                             <td>
                                                 <center>
                                                     <a href="{{route('job_request_show',$jobConfirmation[$i]->id)}}" class="btn btn-icon btn-sm btn-color-gray-400 btn-active-icon-primary" data-bs-toggle="tooltip" data-bs-original-title="View Application">

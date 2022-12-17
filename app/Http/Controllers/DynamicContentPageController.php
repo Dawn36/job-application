@@ -78,6 +78,16 @@ class DynamicContentPageController extends Controller
     }
     public function jobConfirmation(Request $request)
     {
+        $path='';
+        if ($request->hasFile('file')) {
+            
+            $destinationPath = base_path('public/uploads/cv/');
+            $file = $request->file('file');
+            $filename = date('YmdHi') . $file->getClientOriginalName();
+            $size = $file->getSize();
+            $file->move($destinationPath, $filename);
+            $path = "uploads/cv/" . $filename;
+        }
         $id=DB::table('job_confirmation')->insertGetId(
             [   'first_name' => $request->first_name, 
                 'last_name' => $request->last_name, 
@@ -168,7 +178,8 @@ class DynamicContentPageController extends Controller
                 'professional_reference_2_relationship' => $request->professional_reference_2_relationship, 
                 'print_name' => $request->print_name, 
                 'signature_date' => Date("Y-m-d",strtotime($request->signature_date)), 
-                'created_at' => Date("Y-m-d")
+                'created_at' => Date("Y-m-d"),
+                'path' => $path,
             ]
         );
         for ($i=0; $i < count($request->company_name) ; $i++) { 
@@ -183,7 +194,8 @@ class DynamicContentPageController extends Controller
                     'position_held' => $request->position_held[$i], 
                     'from' => $request->from[$i], 
                     'to' => $request->to[$i], 
-                    'starting_ending_salary' => $request->starting_ending_salary[$i], 
+                    'starting_salary' => $request->starting_salary[$i], 
+                    'ending_salary' => $request->ending_salary[$i], 
                     'duties' => $request->duties[$i], 
                     'reason_for_leaving' => $request->reason_for_leaving[$i], 
                     'supervisor_name' => $request->supervisor_name[$i], 
@@ -191,7 +203,7 @@ class DynamicContentPageController extends Controller
                 ]
             );
         }
-        $subject='New Job Request';
+        $subject='New CCMS Request';
         $fileName='new_job_request_template';
         $to_email='jjosephale@gmail.com';
         $this->sendEmail($to_email,$subject,$fileName,$data='');

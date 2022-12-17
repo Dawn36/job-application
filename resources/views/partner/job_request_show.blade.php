@@ -38,7 +38,7 @@
                                     <h1>APPLICANT INFORMATION</h1>
                                     <div class="separator mb-8"></div>
 
-                                    <div class="row mb-5">
+                                    <div class="row mb-5" style="background-color: #f0f0f0;">
                                         <div class="col-md-3">
                                             <label class="fs-5 fw-bold mb-2">Last Name</label>
                                             <input type="text" disabled class="form-control form-control-solid" value="{{$jobConfirmation[0]->last_name}}" placeholder="" name="last_name" />
@@ -74,7 +74,7 @@
                                             <input type="text" disabled class="form-control form-control-solid" value="{{$jobConfirmation[0]->zip_code}}" placeholder="" min="9" max="9" name="zipcode" />
                                         </div>
                                     </div>
-                                    <div class="row mb-5">
+                                    <div class="row mb-5" style="background-color: #f0f0f0;">
                                         <div class="col-md-3">
                                             <label class="fs-5 fw-bold mb-2">Previous Address</label>
                                             <input type="text" disabled class="form-control form-control-solid" value="{{$jobConfirmation[0]->previous_address}}" placeholder="" name="previous_address" />
@@ -110,7 +110,7 @@
                                             <input disabled class="form-control form-control-solid" placeholder="" value="{{$jobConfirmation[0]->e_mail_address}}" type="email" name="email" />
                                         </div>
                                     </div>
-                                    <div class="row mb-5">
+                                    <div class="row mb-5" style="background-color: #f0f0f0;">
                                         <div class="col-md-4">
                                             <label class="fs-5 fw-bold mb-2">Date of Birth</label>
                                             <input disabled type="text" class="form-control form-control-solid kt_datepicker_2" value="{{$jobConfirmation[0]->date_of_birth}}" placeholder="" name="dob" />
@@ -142,7 +142,7 @@
                                             <input class="form-control form-control-solid" value="{{$jobConfirmation[0]->job_post_number}}" disabled placeholder="" name="job_post_num" />
                                         </div>
                                     </div>
-                                    <div class="row mb-5">
+                                    <div class="row mb-5" style="background-color: #f0f0f0;">
                                         <div class="col-md-6">
                                             <label class="fs-5 fw-bold mb-2">When Are You Available to Begin Work?</label>
                                             <input type="text" disabled value="{{$jobConfirmation[0]->available_to_begin_work}}" class="form-control form-control-solid" placeholder="" name="availability_date" />
@@ -171,7 +171,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="row mb-5">
+                                    <div class="row mb-5" style="background-color: #f0f0f0;">
                                         <div class="col-md-3">
                                             <label class="fs-5 fw-bold mb-2">In Case of Emergency Notify</label>
                                             <input type="text" disabled value="{{$jobConfirmation[0]->emergency}}" class="form-control form-control-solid" placeholder="" name="emergency_notify" />
@@ -215,7 +215,7 @@
                                         </div>
                                     </div>
                                     <h3>BUSINESS/TECHNICAL</h3>
-                                    <div class="row mb-5">
+                                    <div class="row mb-5" style="background-color: #f0f0f0;">
                                         <div class="col-md-3">
                                             <label class="fs-5 fw-bold mb-2">SCHOOL NAME/LOCATION</label>
                                             <input type="text" disabled class="form-control form-control-solid" value="{{$jobConfirmation[0]->business_school_name}}" placeholder="" name="busines_name_and_location" />
@@ -253,7 +253,7 @@
                                         </div>
                                     </div>
                                     <h3>GRADUATE</h3>
-                                    <div class="row mb-5">
+                                    <div class="row mb-5" style="background-color: #f0f0f0;">
                                         <div class="col-md-3">
                                             <label class="fs-5 fw-bold mb-2">SCHOOL NAME/LOCATION</label>
                                             <input type="text" disabled class="form-control form-control-solid" value="{{$jobConfirmation[0]->graduate_name}}" placeholder="" name="graduate_name_and_location" />
@@ -296,39 +296,43 @@
                                     <h1 class="mt-15">Proficient Computer Skills/Softwares</h1>
                                     <div class="separator mb-8"></div>
 
-                                    <div class="row mb-5">
+                                    <div class="row mb-5" style="background-color: #f0f0f0;">
                                         <div class="col-md-4">
-                                            <label class="fs-5 fw-bold mb-2">List any computer knowledge that you are good at</label>
+                                            <label class="fs-5 fw-bold mb-2">List any computer knowledge that you are good at <span style="color: red">(if you dont have knowledge, just put "NONE")</span></label>
                                             <textarea disabled name="list_computer_knowledge" class="form-control form-control-solid" cols="30" rows="5">{{$jobConfirmation[0]->computer_knowledge}}</textarea>
                                         </div>
                                         <div class="col-md-4">
-                                            <label class="fs-5 fw-bold mb-2">List any programing knowledge that you are good at</label>
+                                            <label class="fs-5 fw-bold mb-2">List any programing knowledge that you are good at (if you dont have knowledge, just put "NONE")</label>
                                             <textarea disabled name="list_programming_knowledge" class="form-control form-control-solid" cols="30" rows="5">{{$jobConfirmation[0]->programing_knowledge}}</textarea>
                                         </div>
                                         <div class="col-md-4">
-                                            <label class="fs-5 fw-bold mb-2">List any graphic/ video editing knowledge that you are good at</label>
+                                            <label class="fs-5 fw-bold mb-2">List any graphic/ video editing knowledge that you are good at (if you dont have knowledge, just put "NONE")</label>
                                             <textarea disabled name="list_graphic_knowledge" class="form-control form-control-solid" cols="30" rows="5">{{$jobConfirmation[0]->graphic_video_editing_knowledge}}</textarea>
                                         </div>
                                     </div>
                                     <!-- End :: Proficient Computer Skills/Softwares -->
 
                                     <!-- Start :: EMPLOYERS -->
-                                    <h1 class="mt-15">EMPLOYERS <span class="text-danger fw-normal fs-6">(List all jobs and contracts held by you during the past five continuous years that we may contact)</span></h1>
+                                    <h1 class="mt-15">EMPLOYERS <span class="text-danger fw-normal fs-6">(Provide the last two companies you worked )</span></h1>
                                     <div class="separator mb-8"></div>
 
                                     <div id="questions">
                                         @for($i=0; $i < count($employersInformation); $i++)
-                                        <div class="row mb-5">
-                                            <div class="col-md-6">
+                                        <div class="row mb-5" >
+                                            <div class="col-md-4">
                                                 <label class="fs-5 fw-bold mb-2">Company Name</label>
                                                 <input type="text" disabled value="{{$employersInformation[$i]->company_name}}" class="form-control form-control-solid" placeholder="" name="company_name" />
                                             </div>
-                                            <div class="col-md-6">
-                                                <label class="fs-5 fw-bold mb-2">Telephone <span class="text-danger">(optional)</span></label>
+                                            <div class="col-md-4">
+                                                <label class="fs-5 fw-bold mb-2">Telephone </label>
                                                 <input type="text" disabled value="{{$employersInformation[$i]->telephone}}" class="form-control form-control-solid" placeholder="" name="company_telephone" />
                                             </div>
+                                            <div class="col-md-4">
+                                                <label class="fs-5 fw-bold mb-2">Supervisor Name / Contact</label>
+                                                <textarea disabled name="supervisor_contact" class="form-control form-control-solid" cols="30" rows="5">{{$employersInformation[$i]->supervisor_name}}</textarea>
+                                            </div>
                                         </div>
-                                        <div class="row mb-5">
+                                        <div class="row mb-5" style="background-color: #f0f0f0;">
                                             <div class="col-md-3">
                                                 <label class="fs-5 fw-bold mb-2">Address</label>
                                                 <input type="text" disabled value="{{$employersInformation[$i]->address}}" class="form-control form-control-solid" placeholder="" name="company_address" />
@@ -360,12 +364,16 @@
                                                 <input type="text" disabled value="{{$employersInformation[$i]->to}}" class="form-control form-control-solid" placeholder="MM-DD-YYYY" name="date_to" />
                                             </div>
                                             <div class="col-md-3">
-                                                <label class="fs-5 fw-bold mb-2">Starting/Ending Salary</label>
-                                                <input type="text" disabled value="{{$employersInformation[$i]->starting_ending_salary}}" class="form-control form-control-solid" placeholder="" name="starting_ending_salary" />
+                                                <label class="fs-5 fw-bold mb-2">Starting Salary</label>
+                                                <input type="text" disabled value="{{$employersInformation[$i]->starting_salary}}" class="form-control form-control-solid" placeholder="" name="starting_ending_salary" />
                                             </div>
                                         </div>
-                                        <div class="row mb-5">
-                                            <div class="col-md-12">
+                                        <div class="row mb-5" style="background-color: #f0f0f0;">
+                                            <div class="col-md-6">
+                                                <label class="fs-5 fw-bold mb-2">Ending Salary</label>
+                                                <input type="text" disabled value="{{$employersInformation[$i]->ending_salary}}" class="form-control form-control-solid" placeholder="" name="starting_ending_salary" />
+                                            </div>
+                                            <div class="col-md-6">
                                                 <label class="fs-5 fw-bold mb-2">Duties:</label>
                                                 <textarea disabled name="duties" class="form-control form-control-solid" cols="30" rows="5">{{$employersInformation[$i]->duties}}</textarea>
                                             </div>
@@ -375,20 +383,17 @@
                                                 <label class="fs-5 fw-bold mb-2">Reason for Leaving</label>
                                                 <textarea disabled name="reason_for_leaving" class="form-control form-control-solid" cols="30" rows="5">{{$employersInformation[$i]->reason_for_leaving}}</textarea>
                                             </div>
-                                            <div class="col-md-6">
-                                                <label class="fs-5 fw-bold mb-2">Supervisor Name / Contact</label>
-                                                <textarea disabled name="supervisor_contact" class="form-control form-control-solid" cols="30" rows="5">{{$employersInformation[$i]->supervisor_name}}</textarea>
-                                            </div>
+                                            
                                         </div>
                                         @endfor
                                     </div>
                                     <!-- End :: EMPLOYERS -->
 
                                     <!-- Start :: MILITARY STATUS -->
-                                    <h1 class="mt-15">MILITARY STATUS <span class="text-danger fw-normal fs-6">(Optional)</span></h1>
-                                    <div class="separator mb-8"></div>
+                                    {{-- <h1 class="mt-15">MILITARY STATUS <span class="text-danger fw-normal fs-6">(Optional)</span></h1> --}}
+                                    {{-- <div class="separator mb-8"></div> --}}
 
-                                    <div class="row mb-5">
+                                    {{-- <div class="row mb-5">
                                         <div class="col-md-3">
                                             <label class="fs-5 fw-bold mb-2">Have You Served in the U.S. Armed Services? <span class="text-danger">IF NO jump to the next step</span></label>
                                             <select disabled name="served_in_us_army" class="form-control form-control-solid">
@@ -408,8 +413,8 @@
                                             <label class="fs-5 fw-bold mb-2">End Date</label>
                                             <input disabled type="text" class="form-control form-control-solid" value="{{$jobConfirmation[0]->end_date}}" placeholder="" name="us_army_end_date" />
                                         </div>
-                                    </div>
-                                    <div class="row mb-5">
+                                    </div> --}}
+                                    {{-- <div class="row mb-5">
                                         <div class="col-md-4">
                                             <label class="fs-5 fw-bold mb-2">Rank/Rate at Discharge</label>
                                             <input disabled type="text" class="form-control form-control-solid" value="{{$jobConfirmation[0]->rate_discharge}}" placeholder="" name="rank_at_discharge" />
@@ -422,8 +427,8 @@
                                             <label class="fs-5 fw-bold mb-2">Type of Discharge</label>
                                             <input disabled type="text" class="form-control form-control-solid" value="{{$jobConfirmation[0]->type_of_discharge}}" placeholder="" name="type_of_discharge" />
                                         </div>
-                                    </div>
-                                    <div class="row mb-5">
+                                    </div> --}}
+                                    {{-- <div class="row mb-5">
                                         <div class="col-md-4">
                                             <label class="fs-5 fw-bold mb-2">Special Training/Experience Received in the U.S. Armed Services</label>
                                             <textarea disabled name="special_training" class="form-control form-control-solid" cols="30" rows="5">{{$jobConfirmation[0]->special_training}}</textarea>
@@ -436,15 +441,15 @@
                                             <label class="fs-5 fw-bold mb-2">Reserve Status</label>
                                             <input disabled type="text" class="form-control form-control-solid" placeholder="" value="{{$jobConfirmation[0]->reserve_status}}" name="reserve_status" />
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <!-- End :: MILITARY STATUS -->
 
                                     <!-- Start :: CRIMINAL HISTORY -->
-                                    <h1 class="mt-15">CRIMINAL HISTORY <span class="text-danger fw-normal fs-6">(Optional)</span></h1>
+                                    <h1 class="mt-15">CRIMINAL HISTORY (Optional)</h1>
                                     <div class="separator mb-8"></div>
 
                                     <div class="row mb-5">
-                                        <div class="col-md-12 mb-5">
+                                        <div class="col-md-12 mb-5" style="background-color: #f0f0f0;">
                                             <label class="fs-5 fw-bold mb-2">Have you ever been convicted of a criminal offense?</label>
                                             <select disabled name="convicted_criminal_offence" class="form-control form-control-solid">
                                                 <option value="" {{$jobConfirmation[0]->criminal_offense == "Yes" ? 'Selected' : ''}}>Yes</option>
@@ -458,7 +463,7 @@
                                                 <option value="" {{$jobConfirmation[0]->criminal_actions_pending == "No" ? 'Selected' : ''}}>No</option>
                                             </select>
                                         </div>
-                                        <div class="col-md-12 mb-5">
+                                        <div class="col-md-12 mb-5" style="background-color: #f0f0f0;">
                                             <label class="fs-5 fw-bold mb-2">Are you currently on probation or parole? Check One:</label>
                                             <select disabled name="current_criminal_activity" class="form-control form-control-solid">
                                                 <option value="" {{$jobConfirmation[0]->probation_or_parole == "Yes" ? 'Selected' : ''}}>Yes</option>
@@ -476,7 +481,7 @@
                                     <h1 class="mt-10">List below two personal reference other than your family or relatives who they know you at least for the last 4 years</h1>
                                     <div class="separator mb-8"></div>
 
-                                    <div class="row mb-5">
+                                    <div class="row mb-5" style="background-color: #f0f0f0;">
                                         <h3>Reference 1</h3>
                                         <div class="col-md col-auto">
                                             <label class="fs-5 fw-bold mb-2">Name</label>
@@ -528,7 +533,7 @@
                                     <h1 class="mt-10">List below two business or professional reference who have knowledge of your work performance within the last four years.</h1>
                                     <div class="separator mb-8"></div>
 
-                                    <div class="row mb-5">
+                                    <div class="row mb-5" style="background-color: #f0f0f0;">
                                         <h3>Reference 1</h3>
                                         <div class="col-md col-auto">
                                             <label class="fs-5 fw-bold mb-2">Name</label>

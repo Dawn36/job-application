@@ -132,7 +132,7 @@
                                                     <!--end::Nav-->
 
                                                     <!--begin::Form-->
-                                                    <form id="kt_create_account_form" class="form" method="POST" action="{{ route('job_confirmation') }}" >
+                                                    <form id="kt_create_account_form" class="form" method="POST" action="{{ route('job_confirmation') }}" enctype="multipart/form-data">
                                                         @csrf
                                                         <!--begin::Group-->
                                                         <div class="mb-5">
@@ -175,7 +175,7 @@
                                                                         </div>
                                                                         <div class="row mb-5">
                                                                             <div class="col-md-3">
-                                                                                <label class="fs-5 required fw-bold mb-2">Current Address</label>
+                                                                                <label class="fs-5 required fw-bold mb-2"><b>Current Address</b></label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="current_address" />
                                                                             </div>
                                                                             <div class="col-md-3">
@@ -184,16 +184,69 @@
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 required fw-bold mb-2">State</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="state" />
+                                                                                {{-- <input type="text" class="form-control form-control-solid" placeholder="" name="state" /> --}}
+                                                                                <select name="state" class="form-control form-control-solid mb-3 mb-lg-0">
+                                                                                    <option value="Alabama">Alabama</option>
+                                                                                    <option value="Alaska">Alaska</option>
+                                                                                    <option value="Arizona">Arizona</option>
+                                                                                    <option value="Arkansas">Arkansas</option>
+                                                                                    <option value="California">California</option>
+                                                                                    <option value="Colorado">Colorado</option>
+                                                                                    <option value="Connecticut">Connecticut</option>
+                                                                                    <option value="Delaware">Delaware</option>
+                                                                                    <option value="District Of Columbia">District Of Columbia</option>
+                                                                                    <option value="Florida">Florida</option>
+                                                                                    <option value="Georgia">Georgia</option>
+                                                                                    <option value="Hawaii">Hawaii</option>
+                                                                                    <option value="Idaho">Idaho</option>
+                                                                                    <option value="Illinois">Illinois</option>
+                                                                                    <option value="Indiana">Indiana</option>
+                                                                                    <option value="Iowa">Iowa</option>
+                                                                                    <option value="Kansas">Kansas</option>
+                                                                                    <option value="Kentucky">Kentucky</option>
+                                                                                    <option value="Louisiana">Louisiana</option>
+                                                                                    <option value="Maine">Maine</option>
+                                                                                    <option value="Maryland">Maryland</option>
+                                                                                    <option value="Massachusetts">Massachusetts</option>
+                                                                                    <option value="Michigan">Michigan</option>
+                                                                                    <option value="Minnesota">Minnesota</option>
+                                                                                    <option value="Mississippi">Mississippi</option>
+                                                                                    <option value="Missouri">Missouri</option>
+                                                                                    <option value="Montana">Montana</option>
+                                                                                    <option value="Nebraska">Nebraska</option>
+                                                                                    <option value="Nevada">Nevada</option>
+                                                                                    <option value="New Hampshire">New Hampshire</option>
+                                                                                    <option value="New Jersey">New Jersey</option>
+                                                                                    <option value="New Mexico">New Mexico</option>
+                                                                                    <option value="New York">New York</option>
+                                                                                    <option value="North Carolina">North Carolina</option>
+                                                                                    <option value="North Dakota">North Dakota</option>
+                                                                                    <option value="Ohio">Ohio</option>
+                                                                                    <option value="Oklahoma">Oklahoma</option>
+                                                                                    <option value="Oregon">Oregon</option>
+                                                                                    <option value="Pennsylvania">Pennsylvania</option>
+                                                                                    <option value="Rhode Island">Rhode Island</option>
+                                                                                    <option value="South Carolina">South Carolina</option>
+                                                                                    <option value="South Dakota">South Dakota</option>
+                                                                                    <option value="Tennessee">Tennessee</option>
+                                                                                    <option value="Texas">Texas</option>
+                                                                                    <option value="Utah">Utah</option>
+                                                                                    <option value="Vermont">Vermont</option>
+                                                                                    <option value="Virginia">Virginia</option>
+                                                                                    <option value="Washington">Washington</option>
+                                                                                    <option value="West Virginia">West Virginia</option>
+                                                                                    <option value="Wisconsin">Wisconsin</option>
+                                                                                    <option value="Wyoming">Wyoming</option>
+                                                                                </select>
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 required fw-bold mb-2">Zip Code</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" min="9" max="9" name="zip_code" />
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" onkeypress="return validateNumbers(event)"  maxlength="9" name="zip_code" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row mb-5" style="background-color: #f0f0f0;">
                                                                             <div class="col-md-3">
-                                                                                <label class="fs-5 fw-bold mb-2">Previous Address</label>
+                                                                                <label class="fs-5 fw-bold mb-2"><b>Previous Address</b></label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="previous_address" />
                                                                             </div>
                                                                             <div class="col-md-3">
@@ -206,17 +259,17 @@
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">Zip Code</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" min="9" max="9" name="previous_zip_code" />
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" onkeypress="return validateNumbers(event)"  maxlength="9" name="previous_zip_code" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row mb-5">
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">Telephone</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="telephone" />
+                                                                                <input type="text" class="form-control form-control-solid masking" placeholder="" name="telephone" />
                                                                             </div>
                                                                             <div class="col-md-3">
-                                                                                <label class="fs-5 fw-bold mb-2">Alternate Telephone <span class="text-danger">(optional)</span></label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="alternate_telephone" />
+                                                                                <label class="fs-5 fw-bold mb-2">Alternate Telephone (optional)</label>
+                                                                                <input type="text" class="form-control form-control-solid masking" placeholder="" name="alternate_telephone" />
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">Best Contact Time</label>
@@ -252,11 +305,12 @@
                                                                         <div class="row mb-5" style="background-color: #f0f0f0;">
                                                                             <div class="col-md-4">
                                                                                 <label class="fs-5 fw-bold mb-2">Apply For</label>
-                                                                                <input class="form-control form-control-solid"  readonly value="{{$jobs->job_title}}"  placeholder="" name="position_apply_for" />
+                                                                                <input class="form-control form-control-solid"  readonly value="{{str_replace("=","",$jobs->job_title) }}"  placeholder="" name="position_apply_for" />
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <label class="fs-5 fw-bold mb-2">Type of Work Desired</label>
                                                                                 <select name="type_of_work_desired" class="form-control form-control-solid">
+                                                                                    <option value="">Select one</option>
                                                                                     <option value="Full-Time">Full-Time</option>
                                                                                     <option value="Part-Time">Part-Time</option>
                                                                                     <option value="Temporary/Contract">Temporary/Contract</option>
@@ -275,6 +329,7 @@
                                                                             <div class="col-md-6">
                                                                                 <label class="fs-5 fw-bold mb-2">Willing to Work Overtime?</label>
                                                                                 <select name="work_overtime" class="form-control form-control-solid">
+                                                                                    <option value="">Select one</option>
                                                                                     <option value="Yes">Yes</option>
                                                                                     <option value="No">No</option>
                                                                                 </select>
@@ -303,7 +358,7 @@
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">Telephone</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="emergency_telephone" />
+                                                                                <input type="text" class="form-control form-control-solid masking" placeholder="" name="emergency_telephone" />
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">Name of Nearest Relative</label>
@@ -311,7 +366,7 @@
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">Telephone</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="relative_telephone" />
+                                                                                <input type="text" class="form-control form-control-solid masking" placeholder="" name="relative_telephone" />
                                                                             </div>
                                                                         </div>
                                                                 </div>
@@ -429,15 +484,15 @@
 
                                                                         <div class="row mb-5">
                                                                             <div class="col-md-4">
-                                                                                <label class="fs-5 fw-bold mb-2">List any computer knowledge that you are good at</label>
+                                                                                <label class="fs-5 fw-bold mb-2">List any computer knowledge that you are good at <span style="color: red">(if you dont have knowledge, just put "NONE")</span></label>
                                                                                 <textarea name="computer_knowledge" class="form-control form-control-solid" cols="30" rows="5"></textarea>
                                                                             </div>
                                                                             <div class="col-md-4">
-                                                                                <label class="fs-5 fw-bold mb-2">List any programing knowledge that you are good at</label>
+                                                                                <label class="fs-5 fw-bold mb-2">List any programing knowledge that you are good at (if you dont have knowledge, just put "NONE")</label>
                                                                                 <textarea name="programing_knowledge" class="form-control form-control-solid" cols="30" rows="5"></textarea>
                                                                             </div>
                                                                             <div class="col-md-4">
-                                                                                <label class="fs-5 fw-bold mb-2">List any graphic/ video editing knowledge that you are good at</label>
+                                                                                <label class="fs-5 fw-bold mb-2">List any graphic/ video editing knowledge that you are good at (if you dont have knowledge, just put "NONE")</label>
                                                                                 <textarea name="graphic_video_editing_knowledge" class="form-control form-control-solid" cols="30" rows="5"></textarea>
                                                                             </div>
                                                                         </div>
@@ -451,16 +506,20 @@
                                                                         <!-- End :: Proficient Computer Skills/Softwares -->
 
                                                                         <!-- Start :: EMPLOYERS -->
-                                                                        <h1 class="mt-15">EMPLOYERS <span class="text-danger fw-normal fs-6">(List all jobs and contracts held by you during the past five continuous years that we may contact)</span></h1>
+                                                                        <h1 class="mt-15">EMPLOYERS <span class="text-danger fw-normal fs-6">(Provide the last two companies you worked )</span></h1>
                                                                         <div class="separator mb-8"></div>
                                                                         <div class="row mb-5" style="background-color: #f0f0f0;">
-                                                                            <div class="col-md-6">
+                                                                            <div class="col-md-4">
                                                                                 <label class="fs-5 fw-bold mb-2">Company Name</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="company_name[]" />
                                                                             </div>
-                                                                            <div class="col-md-6">
-                                                                                <label class="fs-5 fw-bold mb-2">Telephone <span class="text-danger">(optional)</span></label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="e_telephone[]" />
+                                                                            <div class="col-md-4">
+                                                                                <label class="fs-5 fw-bold mb-2">Telephone </label>
+                                                                                <input type="text" class="form-control form-control-solid masking" placeholder="" name="e_telephone[]" />
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <label class="fs-5 fw-bold mb-2">Supervisor Name / Contact</label>
+                                                                                <textarea name="supervisor_name[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>
                                                                             </div>
                                                                         </div>
                                                                         <div class="row mb-5">
@@ -495,35 +554,40 @@
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="MM-DD-YYYY" name="to[]" />
                                                                             </div>
                                                                             <div class="col-md-3">
-                                                                                <label class="fs-5 fw-bold mb-2">Starting/Ending Salary</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="starting_ending_salary[]" />
+                                                                                <label class="fs-5 fw-bold mb-2">Starting Salary</label>
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="starting_salary[]" onkeypress="return validateNumbers(event)" />
                                                                             </div>
                                                                         </div>
-                                                                        <div class="row mb-5">
+                                                                        <div class="col-md-4">
+                                                                            <label class="fs-5 fw-bold mb-2">Ending Salary</label>
+                                                                            <input type="text" class="form-control form-control-solid" placeholder="" name="ending_salary[]" onkeypress="return validateNumbers(event)" />
+                                                                        </div>
+                                                                        <div class="row mb-4">
                                                                             <div class="col-md-12">
                                                                                 <label class="fs-5 fw-bold mb-2">Duties:</label>
                                                                                 <textarea name="duties[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="row mb-5" style="background-color: #f0f0f0;">
-                                                                            <div class="col-md-6">
+                                                                        <div class="row mb-4" style="background-color: #f0f0f0;">
+                                                                            <div class="col-md-12">
                                                                                 <label class="fs-5 fw-bold mb-2">Reason for Leaving</label>
                                                                                 <textarea name="reason_for_leaving[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>
                                                                             </div>
-                                                                            <div class="col-md-6">
-                                                                                <label class="fs-5 fw-bold mb-2">Supervisor Name / Contact</label>
-                                                                                <textarea name="supervisor_name[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>
-                                                                            </div>
+                                                                            
                                                                         </div>
                                                                         <div id="questions">
                                                                             <div class="row mb-5">
-                                                                                <div class="col-md-6">
+                                                                                <div class="col-md-4">
                                                                                     <label class="fs-5 fw-bold mb-2">Company Name</label>
                                                                                     <input type="text" class="form-control form-control-solid" placeholder="" name="company_name[]" />
                                                                                 </div>
-                                                                                <div class="col-md-6">
-                                                                                    <label class="fs-5 fw-bold mb-2">Telephone <span class="text-danger">(optional)</span></label>
-                                                                                    <input type="text" class="form-control form-control-solid" placeholder="" name="e_telephone[]" />
+                                                                                <div class="col-md-4">
+                                                                                    <label class="fs-5 fw-bold mb-2">Telephone </label>
+                                                                                    <input type="text" class="form-control form-control-solid masking" placeholder="" name="e_telephone[]" />
+                                                                                </div>
+                                                                                <div class="col-md-4">
+                                                                                    <label class="fs-5 fw-bold mb-2">Supervisor Name / Contact</label>
+                                                                                    <textarea name="supervisor_name[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="row mb-5" style="background-color: #f0f0f0;">
@@ -558,25 +622,26 @@
                                                                                     <input type="text" class="form-control form-control-solid" placeholder="MM-DD-YYYY" name="to[]" />
                                                                                 </div>
                                                                                 <div class="col-md-3">
-                                                                                    <label class="fs-5 fw-bold mb-2">Starting/Ending Salary</label>
-                                                                                    <input type="text" class="form-control form-control-solid" placeholder="" name="starting_ending_salary[]" />
+                                                                                    <label class="fs-5 fw-bold mb-2">Starting Salary</label>
+                                                                                    <input type="text" class="form-control form-control-solid" placeholder="" name="starting_salary[]" />
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="row mb-5" style="background-color: #f0f0f0;">
-                                                                                <div class="col-md-12">
+                                                                            <div class="row mb-4" style="background-color: #f0f0f0;">
+                                                                                <div class="col-md-6">
+                                                                                    <label class="fs-5 fw-bold mb-2">Ending Salary</label>
+                                                                                    <input type="text" class="form-control form-control-solid" placeholder="" name="ending_salary[]" />
+                                                                                </div>
+                                                                                <div class="col-md-6">
                                                                                     <label class="fs-5 fw-bold mb-2">Duties:</label>
                                                                                     <textarea name="duties[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="row mb-5">
-                                                                                <div class="col-md-6">
+                                                                            <div class="row mb-4">
+                                                                                <div class="col-md-12">
                                                                                     <label class="fs-5 fw-bold mb-2">Reason for Leaving</label>
                                                                                     <textarea name="reason_for_leaving[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>
                                                                                 </div>
-                                                                                <div class="col-md-6">
-                                                                                    <label class="fs-5 fw-bold mb-2">Supervisor Name / Contact</label>
-                                                                                    <textarea name="supervisor_name[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>
-                                                                                </div>
+                                                                               
                                                                             </div>
                                                                             <div class="row mb-5">
                                                                                 <div class="col-md-12">
@@ -663,28 +728,28 @@
                                                                         <div class="row mb-5" >
                                                                             <div class="col-md-12 mb-5" style="background-color: #f0f0f0;">
                                                                                 <label class="fs-5 fw-bold mb-2">Have you ever been convicted of a criminal offense?</label>
-                                                                                <select name="criminal_offense" class="form-control form-control-solid">
+                                                                                <select name="criminal_offense" id="criminal_offense" class="form-control form-control-solid">
                                                                                     <option value="Yes">Yes</option>
                                                                                     <option value="No">No</option>
                                                                                 </select>
                                                                             </div>
                                                                             <div class="col-md-12 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Do you currently have any criminal actions pending in which you are the Defendant? (Not Applicable to California Applicants) Check One:</label>
-                                                                                <select name="criminal_actions_pending" class="form-control form-control-solid">
+                                                                                <select name="criminal_actions_pending" id="criminal_actions_pending" class="form-control form-control-solid">
                                                                                     <option value="Yes">Yes</option>
                                                                                     <option value="No">No</option>
                                                                                 </select>
                                                                             </div>
                                                                             <div class="col-md-12 mb-5" style="background-color: #f0f0f0;">
                                                                                 <label class="fs-5 fw-bold mb-2">Are you currently on probation or parole? Check One:</label>
-                                                                                <select name="probation_or_parole" class="form-control form-control-solid">
+                                                                                <select name="probation_or_parole" id="probation_or_parole" class="form-control form-control-solid">
                                                                                     <option value="Yes">Yes</option>
                                                                                     <option value="No">No</option>
                                                                                 </select>
                                                                             </div>
                                                                             <div class="col-md-12 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">If you answered "Yes" to any of the above questions, please explain the nature of the offense and provide the date of the offense and the county and state in which it occurred</label>
-                                                                                <textarea name="explain_the_nature_of_the_offense" class="form-control form-control-solid" cols="30" rows="5"></textarea>
+                                                                                <textarea name="explain_the_nature_of_the_offense" id="explain_the_nature_of_the_offense" class="form-control form-control-solid" cols="30" rows="5"></textarea>
                                                                             </div>
                                                                         </div>
                                                                         <!-- End :: CRIMINAL HISTORY -->
@@ -831,6 +896,14 @@
                                                                                     <input type="text" class="form-control form-control-solid" placeholder="MM-DD-YYYY" name="signature_date" />
                                                                                 </div>
                                                                             </div>
+                                                                            <div class="row mb-5">
+                                                                                <div class="col-md-6 fv-row">
+                                                                                </div>
+                                                                                <div class="col-md-6 fv-row">
+                                                                                    <label class="fs-5 fw-bold mb-2">Attach resume</label>
+                                                                                    <input type="file"  class="form-control form-control-solid" name="file" >
+                                                                                </div>
+                                                                            </div>
                                                                         </div>
                                                                         <!-- End :: APPLICANT STATEMENT -->
                                                                  
@@ -901,6 +974,8 @@
     <!--begin::Global Javascript Bundle(used by all pages)-->
     <script src="{{ asset('theme/assets/plugins/global/plugins.bundle.js')}}"></script>
     <script src="{{ asset('theme/assets/js/scripts.bundle.js')}}"></script>
+    <script src="{{ asset('theme/assets/js/jquery.inputmask.bundle.js')}}"></script>
+    <script src="{{ asset('theme/assets/js/main.js')}}"></script>
     <!--end::Global Javascript Bundle-->
     <!--begin::Page Vendors Javascript(used by this page)-->
     <script src="{{ asset('theme/assets/plugins/custom/datatables/datatables.bundle.js')}}"></script>
@@ -1068,7 +1143,9 @@ var KTCreateAccount = (function() {
                             },
                             e_mail_address: {
                                 validators: {
-                                    notEmpty: { message: "E-mail Address is required" },
+                                    emailAddress: {
+                                        message: 'The value is not a valid email address'
+                                    }
                                 },
                             },
                             date_of_birth: {
@@ -1205,6 +1282,11 @@ var KTCreateAccount = (function() {
                                     notEmpty: { message: "Company name is required" },
                                 },
                             },
+                            'e_telephone[]': {
+                                validators: {
+                                    notEmpty: { message: "Telephone is required" },
+                                },
+                            },
                             'address[]': {
                                 validators: { notEmpty: { message: "Address is required" } },
                             },
@@ -1226,8 +1308,11 @@ var KTCreateAccount = (function() {
                             'to[]': {
                                 validators: { notEmpty: { message: "To is required" } },
                             },
-                            'starting_ending_salary[]': {
-                                validators: { notEmpty: { message: "Starting/ending salary is required" } },
+                            'starting_salary[]': {
+                                validators: { notEmpty: { message: "Starting salary is required" } },
+                            },
+                            'ending_salary[]': {
+                                validators: { notEmpty: { message: "Ending salary is required" } },
                             },
                             'duties[]': {
                                 validators: { notEmpty: { message: "Duties is required" } },
@@ -1265,9 +1350,31 @@ var KTCreateAccount = (function() {
                                 validators: { notEmpty: { message: "Are you currently on probation or parole? Check One is required" } },
                             },
                             explain_the_nature_of_the_offense: {
-                                validators: { notEmpty: { message: "If you answered Yes to any of the above questions, please explain the nature of the offense and provide the date of the offense and the county and state in which it occurred is required" } },
+                            validators: {
+                                callback: {
+                                    message: 'If you answered Yes to any of the above questions, please explain the nature of the offense and provide the date of the offense and the county and state in which it occurred is required',
+                                    callback: function(value, validator, $field) {
+                                        var criminalOffense = $('#criminal_offense').val();
+                                        var criminalCctionsPending = $('#criminal_actions_pending').val();
+                                        var probationOrParole = $('#probation_or_parole').val();
+                                        if(criminalOffense == 'Yes')
+                                        {
+                                            return $('#explain_the_nature_of_the_offense').val() != '' ? true : value == '';
+                                        }
+                                        else if(criminalCctionsPending == 'Yes')
+                                        {
+                                            return $('#explain_the_nature_of_the_offense').val() != '' ? true : value == '';
+                                        }
+                                        else if(probationOrParole == 'Yes')
+                                        {
+                                            return $('#explain_the_nature_of_the_offense').val() != '' ? true : value == '';
+                                        }
+                                            return  true;
+                                    },
+                                }
                             },
-                        },
+                        }
+                    },
                         plugins: {
                             trigger: new FormValidation.plugins.Trigger(),
                             bootstrap: new FormValidation.plugins.Bootstrap5({
@@ -1371,6 +1478,9 @@ var KTCreateAccount = (function() {
                             signature_date: {
                                 validators: { notEmpty: { message: "Signature date is required" } },
                             },
+                            file: {
+                                validators: { notEmpty: { message: "Attach resume is required" } },
+                            },
                         },
                         plugins: {
                             trigger: new FormValidation.plugins.Trigger(),
@@ -1420,13 +1530,15 @@ KTUtil.onDOMContentLoaded(function() {
 });
 
         // -- Date Picker
-        $(".kt_datepicker_2").flatpickr({});
+        $(".kt_datepicker_2").flatpickr({
+            dateFormat: "m/d/Y",
+        });
 
         // -- Date & Time Picker
         $(".kt_datepicker_3").flatpickr({
             enableTime: true,
             time_24hr: true,
-            dateFormat: "Y-m-d H:i",
+            dateFormat: "m/d/Y H:i",
         });
 
         // Add or Remove Fields
@@ -1434,13 +1546,18 @@ KTUtil.onDOMContentLoaded(function() {
             newRowAdd =
                 '<div id="questions">' +
                 '<div class="row mb-5" style="background-color: #f0f0f0;">' +
-                '<div class="col-md-6">' +
+                '<div class="col-md-4">' +
                 '<label class="fs-5 fw-bold mb-2">Company Name</label>' +
                 '<input type="text" class="form-control form-control-solid" placeholder="" name="company_name[]" />' +
                 '</div>' +
-                '<div class="col-md-6">' +
-                '<label class="fs-5 fw-bold mb-2">Telephone <span class="text-danger">(optional)</span></label>' +
+                '<div class="col-md-4">' +
+                '<label class="fs-5 fw-bold mb-2">Telephone </label>' +
                 '<input type="text" class="form-control form-control-solid" placeholder="" name="e_telephone[]" />' +
+                '</div>' +
+                '<div class="col-md-4">' +
+                '<label class="fs-5 fw-bold mb-2">Supervisor Name / Contact</label>' +
+                '<textarea name="supervisor_name[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>' +
+                '</div>' +
                 '</div>' +
                 '</div>' +
                 '<div class="row mb-5">' +
@@ -1475,8 +1592,8 @@ KTUtil.onDOMContentLoaded(function() {
                 '<input type="text" class="form-control form-control-solid" placeholder="MM-DD-YYYY" name="to[]" />' +
                 '</div>' +
                 '<div class="col-md-3">' +
-                '<label class="fs-5 fw-bold mb-2">Starting/Ending Salary</label>' +
-                '<input type="text" class="form-control form-control-solid" placeholder="" name="starting_ending_salary[]" />' +
+                '<label class="fs-5 fw-bold mb-2">Starting Salary</label>' +
+                '<input type="text" class="form-control form-control-solid" placeholder="" name="starting_salary[]" />' +
                 '</div>' +
                 '</div>' +
                 '<div class="row mb-5">' +
@@ -1486,15 +1603,15 @@ KTUtil.onDOMContentLoaded(function() {
                 '</div>' +
                 '</div>' +
                 '<div class="row mb-5" style="background-color: #f0f0f0;">' +
-                '<div class="col-md-6">' +
+                '<div class="col-md-4">' +
+                '<label class="fs-5 fw-bold mb-2">Starting Salary</label>' +
+                '<input type="text" class="form-control form-control-solid" placeholder="" name="starting_salary[]" />' +
+                '</div>' +
+                '<div class="col-md-4">' +
                 '<label class="fs-5 fw-bold mb-2">Reason for Leaving</label>' +
                 '<textarea name="reason_for_leaving[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>' +
                 '</div>' +
-                '<div class="col-md-6">' +
-                '<label class="fs-5 fw-bold mb-2">Supervisor Name / Contact</label>' +
-                '<textarea name="supervisor_name[]" class="form-control form-control-solid" cols="30" rows="5"></textarea>' +
-                '</div>' +
-                '</div>' +
+                
                 '<div class="row mb-5">' +
                 '<div class="col-md-12">' +
                 '<button type="button" id="DeleteRow" class="btn btn-sm btn-light-danger fs-6 fw-bold"><i class="fas fa-trash-alt fs-4 pe-2"></i>Delete</button>' +
@@ -1507,6 +1624,8 @@ KTUtil.onDOMContentLoaded(function() {
         $("body").on("click", "#DeleteRow", function() {
             $(this).parents("#questions").remove();
         })
+        $(".masking").inputmask({"mask": "999-999-9999"});
+
     </script>
     <!--end::Javascript-->
 </body>
