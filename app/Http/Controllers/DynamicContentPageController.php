@@ -203,7 +203,7 @@ class DynamicContentPageController extends Controller
                 ]
             );
         }
-        $subject='New CCMS Request';
+        $subject='New CCMS Job application submitted';
         $fileName='new_job_request_template';
         $to_email='jjosephale@gmail.com';
         $this->sendEmail($to_email,$subject,$fileName,$data='');

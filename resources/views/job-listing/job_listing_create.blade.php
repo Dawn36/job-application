@@ -10,6 +10,11 @@
             <label class="required fw-bold fs-6 mb-2">Job #</label>
             <input type="text" name="job_number" class="form-control form-control-solid mb-3 mb-lg-0" placeholder="Please Enter your Job # here." required/>
         </div>
+        <textarea name='description' id='body' hidden></textarea>
+        <div class="fv-row mb-7">
+            <div name="kt_ecommerce_add_product_description" class="min-h-200px mb-2 kt_docs_quill_basica"></div>
+        </div>
+
     </div>
     <!--end::Scroll-->
     <!--begin::Actions-->
@@ -19,3 +24,33 @@
     </div>
     <!--end::Actions-->
 </form>
+<script>
+    // $("#kt_datatable_example_1").DataTable();
+    $(document).ready(function() {
+       
+        var quill = new Quill('.kt_docs_quill_basica', {
+            modules: {
+                toolbar: [
+                    [{
+                        header: [1, 2, false]
+                    }],
+                    ['bold', 'italic', 'underline'],
+                ]
+            },
+            placeholder: 'Type your text here...',
+            theme: 'snow' // or 'bubble'
+        });
+       
+        quill.on('text-change', function() {
+        document.getElementById("body").value = quill.root.innerHTML;
+
+        
+    });
+
+       
+    var value1 = document.getElementById("body").value;
+    var delta1 = quill.clipboard.convert(value1);
+
+    quill.setContents(delta1, 'silent');
+    });
+</script>

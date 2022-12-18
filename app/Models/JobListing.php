@@ -9,6 +9,6 @@ class JobListing extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'user_id','job_title','job_number','is_active', 'created_at', 'updated_at',
+        'user_id','job_title','job_number','is_active', 'created_at', 'updated_at','description'
     ];
 }

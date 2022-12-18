@@ -199,7 +199,7 @@
                                                         </svg>
                                                     </span>
                                                 </button>
-                                                <form  style="display: inline-block" method="POST" action="{{ route('job_request_delete', $jobConfirmation[$i]->id) }}">
+                                                <form  style="display: inline-block" onclick="return confirm('Are you sure you want to delete it?')" method="POST" action="{{ route('job_request_delete', $jobConfirmation[$i]->id) }}">
                                                     @csrf
                                                 <button type="submit"  class="btn btn-icon btn-sm btn-color-gray-400 btn-active-icon-danger me-2" data-bs-toggle="tooltip" data-bs-original-title="Delete Job">
                                                     <span class="svg-icon svg-icon-2">

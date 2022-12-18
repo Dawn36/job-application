@@ -158,7 +158,7 @@
                                                         </svg>
                                                     </span>
                                                 </a> -->
-                                                <form  style="display: inline-block" method="POST" action="{{ route('partner_delete', $partnerList[$i]->id) }}">
+                                                <form  style="display: inline-block" onclick="return confirm('Are you sure you want to delete it?')" method="POST" action="{{ route('partner_delete', $partnerList[$i]->id) }}">
                                                     @csrf
                                                 <button type="submit" class="btn btn-icon btn-sm btn-color-gray-400 btn-active-icon-danger me-2" data-bs-toggle="tooltip" data-bs-original-title="Delete Partner">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->

@@ -65,8 +65,8 @@
                                         <!--begin::Content-->
                                         <div class="flex-lg-row-fluid me-0">
                                             <!--begin::Job-->
-                                            <form id="" class="form" method="POST" action="{{ route('job_list') }}" >
-                                                @csrf
+                                            <form id="" class="form" method="Get" action="{{ route('job_list') }}" >
+                                                {{-- @csrf --}}
                                             <div class="mb-17">
                                                
                                                 <!--begin::Description-->
@@ -109,7 +109,7 @@
                                                     <!--end::Description-->
                                                     
                                                     <!--begin::Apply-->
-                                                    <button type="submit"  class="btn btn-sm btn-primary mt-5">Continue</button>
+                                                    <button type="submit"  class="btn btn-sm btn-primary mt-5">Continue Application</button>
                                                 </form>
                                                 <!--end::Apply-->
                                             </div>

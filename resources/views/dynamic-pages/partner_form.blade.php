@@ -176,7 +176,7 @@
                                                             <!--begin::Wrapper-->
                                                             <div>
                                                                 <button type="submit" class="btn btn-primary" data-kt-stepper-action="submit">Final Submit</button>
-                                                                <button type="button" class="btn btn-primary" data-kt-stepper-action="next">Continue</button>
+                                                                <button type="button" class="btn btn-primary" data-kt-stepper-action="next">Continue Application</button>
                                                             </div>
                                                             <!--end::Wrapper-->
                                                         </div>

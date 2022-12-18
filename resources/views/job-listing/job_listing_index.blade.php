@@ -134,7 +134,7 @@
                                                 </button>
                                                 <form  style="display: inline-block" method="POST" action="{{ route('partner_delete', $jobData[$i]->id) }}">
                                                     @csrf
-                                                <button type="submit" class="btn btn-icon btn-sm btn-color-gray-400 btn-active-icon-danger me-2" data-bs-toggle="tooltip" data-bs-original-title="Delete Jobs">
+                                                <button type="submit" onclick="return confirm('Are you sure you want to delete it?')" class="btn btn-icon btn-sm btn-color-gray-400 btn-active-icon-danger me-2" data-bs-toggle="tooltip" data-bs-original-title="Delete Jobs">
                                                     <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
                                                     <span class="svg-icon svg-icon-2">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

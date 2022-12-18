@@ -15,7 +15,7 @@ class JobListingController extends Controller
      */
     public function index()
     {
-        $jobData=JobListing::get();
+        $jobData=JobListing::orderby('id','desc')->get();
         return view('job-listing/job_listing_index',compact('jobData'));
     }
 
@@ -43,6 +43,7 @@ class JobListingController extends Controller
         ]);
         $data = JobListing::create([
             'job_title' => $request->job_title,
+            'description' => $request->description,
             'job_number' => $request->job_number,
             'user_id'=>Auth::user()->id,
             'created_at' => date("Y-m-d h:i:s"),
@@ -89,10 +90,12 @@ class JobListingController extends Controller
         $job = JobListing::find($id);
         $job['job_title'] = $request->job_title;
         $job['job_number'] = $request->job_number;
+        $job['description'] = $request->description;
         $job['updated_at'] = date("Y-m-d");
         $job->save();
         return redirect()->back();
     }
+    
 
     /**
      * Remove the specified resource from storage.

@@ -142,6 +142,8 @@
                                                                 <div class="fv-row mb-10 text-center">
                                                                     <p class="fw-bold fs-4 text-gray-600 mb-2">You are Appling for</p>
                                                                     <h1 class="fw-bolder display-4 text-gray-800 mb-2">{{$jobs->job_title}} {{$jobs->job_number}}</h1>
+                                                                    <?php echo html_entity_decode($jobs->description) ?>
+
                                                                 </div>
                                                                 <!--end::Input group-->
                                                             </div>
@@ -921,7 +923,7 @@
 
                                                             <div>
                                                                 <button type="button" class="btn btn-primary" data-kt-stepper-action="submit">Final Submit</button>
-                                                                <button type="button" class="btn btn-primary" data-kt-stepper-action="next">Continue</button>
+                                                                <button type="button" class="btn btn-primary" data-kt-stepper-action="next">Continue Application</button>
                                                             </div>
                                                         </div>
                                                     </form>

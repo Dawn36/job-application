@@ -16,7 +16,7 @@ use App\Http\Controllers\DynamicContentPageController;
 |
 */
 Route::get('view_job', [DynamicContentPageController::class, 'jobListing'])->name('view_job');
-Route::post('job_list', [DynamicContentPageController::class, 'jobListSubmit'])->name('job_list');
+Route::get('job_list', [DynamicContentPageController::class, 'jobListSubmit'])->name('job_list');
 
 Route::post('partner_form', [DynamicContentPageController::class, 'partnerFormSubmit'])->name('partner_form');
 Route::post('job_confirmation', [DynamicContentPageController::class, 'jobConfirmation'])->name('job_confirmation');
