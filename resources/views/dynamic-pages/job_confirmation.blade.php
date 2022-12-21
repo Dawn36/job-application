@@ -142,10 +142,10 @@
                                                                 <div class="fv-row mb-10 text-center">
                                                                     <p class="fw-bold fs-4 text-gray-600 mb-2">You are Appling for</p>
                                                                     <h1 class="fw-bolder display-4 text-gray-800 mb-2">{{$jobs->job_title}} {{$jobs->job_number}}</h1>
-                                                                    <?php echo html_entity_decode($jobs->description) ?>
-
+                                                                    
                                                                 </div>
                                                                 <!--end::Input group-->
+                                                                <?php echo html_entity_decode($jobs->description) ?>
                                                             </div>
                                                             <!--end::Step 1-->
 
