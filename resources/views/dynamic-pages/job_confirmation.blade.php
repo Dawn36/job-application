@@ -145,7 +145,7 @@
                                                                     
                                                                 </div>
                                                                 <!--end::Input group-->
-                                                                <div>
+                                                                <div class="w-lg-700px m-auto">
                                                                 <?php echo html_entity_decode($jobs->description) ?>
                                                                 </div>
 
