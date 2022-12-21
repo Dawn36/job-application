@@ -145,7 +145,10 @@
                                                                     
                                                                 </div>
                                                                 <!--end::Input group-->
+                                                                <div>
                                                                 <?php echo html_entity_decode($jobs->description) ?>
+                                                                </div>
+
                                                             </div>
                                                             <!--end::Step 1-->
 
