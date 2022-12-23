@@ -45,7 +45,7 @@
                                     <div class="text-center mb-17">
                                         <!--begin::Heading-->
                                         <img alt="Logo" src="{{ asset('theme/assets/media/logos/CCMS-logo.png')}}" class="h-100px h-lg-150px logo" />
-                                        <h1>{{$jobs}}</h1>
+                                        <h1>Be partner / contribute to Community</h1>
                                         <!--end::Heading-->
                                     </div>
                                     <!--end::-->
@@ -93,7 +93,10 @@
                                                                 <!--begin::Input group-->
                                                                 <div class="fv-row mb-10 text-center">
                                                                     <p class="fw-bold fs-4 text-gray-600 mb-2">You are Appling for</p>
-                                                                    <h1 class="fw-bolder display-4 text-gray-800 mb-2">Be Partner / Contribute to Community</h1>
+                                                                    <h1 class="fw-bolder display-4 text-gray-800 mb-2">{{$jobs->job_title}} {{$jobs->job_number}}</h1>
+                                                                </div>
+                                                                <div class="w-lg-700px m-auto">
+                                                                    <?php echo html_entity_decode($jobs->description) ?>
                                                                 </div>
                                                                 <!--end::Input group-->
                                                             </div>

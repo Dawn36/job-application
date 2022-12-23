@@ -30,14 +30,14 @@ class DynamicContentPageController extends Controller
     }
     public function jobListSubmit(Request $request)
     {
-        if(is_numeric($request->jobs))
+        if($request->jobs != '1')
         {
             $jobs=JobListing::find($request->jobs);
             return view('dynamic-pages/job_confirmation',compact('jobs'));
         }
         else
         {
-            $jobs=$request->jobs;
+            $jobs=JobListing::find($request->jobs);
             return view('dynamic-pages/partner_form',compact('jobs'));
 
         }

@@ -94,12 +94,6 @@
                                                                 </label>
                                                             </div>
                                                             @endfor
-                                                            <div class="form-check form-check-custom form-check-solid mb-3">
-                                                                <input class="form-check-input" name="jobs" type="radio" id="{{$a+1}}" value="Be partner / contribute to Community" />
-                                                                <label class="form-check-label" for="{{$a+1}}">
-                                                                    Be partner / contribute to Community
-                                                                </label>
-                                                            </div>
                                                         </div>
                                                         <!-- End::Jobs List -->
                                                     </div>
