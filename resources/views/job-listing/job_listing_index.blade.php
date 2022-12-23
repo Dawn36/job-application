@@ -132,7 +132,7 @@
                                                     </span>
                                                     <!--end::Svg Icon-->
                                                 </button>
-                                                @if($jobData[$i]->id != 1)
+                                                @if($jobData[$i]->id != '1')
                                                 <form  style="display: inline-block" method="POST" action="{{ route('partner_delete', $jobData[$i]->id) }}">
                                                     @csrf
                                                 <button type="submit" onclick="return confirm('Are you sure you want to delete it?')" class="btn btn-icon btn-sm btn-color-gray-400 btn-active-icon-danger me-2" data-bs-toggle="tooltip" data-bs-original-title="Delete Jobs">
