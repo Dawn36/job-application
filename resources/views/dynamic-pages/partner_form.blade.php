@@ -141,7 +141,7 @@
                                                                             </div>
                                                                             <div class="col-md-6 required fv-row">
                                                                                 <label class="fs-5 fw-bold mb-2">Mobile No</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="mobile_no" required/>
+                                                                                <input type="text" class="form-control form-control-solid masking" placeholder="" name="mobile_no" required/>
                                                                             </div>
                                                                         </div>
                                                                         <div class="row mb-5">
@@ -245,6 +245,7 @@
     <script src="{{ asset('theme/assets/js/custom/utilities/modals/upgrade-plan.js')}}"></script>
     <script src="{{ asset('theme/assets/js/custom/utilities/modals/create-app.js')}}"></script>
     <script src="{{ asset('theme/assets/js/custom/utilities/modals/users-search.js')}}"></script>
+    <script src="{{ asset('theme/assets/js/main.js')}}"></script>
     <!--end::Page Custom Javascript-->
     <script>
         // Stepper lement
@@ -265,6 +266,7 @@
 
         // -- Date Picker
         $(".kt_datepicker_2").flatpickr({});
+        $(".masking").inputmask({"mask": "999-999-9999"});
     </script>
     <!--end::Javascript-->
 </body>
