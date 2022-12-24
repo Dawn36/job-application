@@ -245,7 +245,7 @@
     <script src="{{ asset('theme/assets/js/custom/utilities/modals/upgrade-plan.js')}}"></script>
     <script src="{{ asset('theme/assets/js/custom/utilities/modals/create-app.js')}}"></script>
     <script src="{{ asset('theme/assets/js/custom/utilities/modals/users-search.js')}}"></script>
-    <script src="{{ asset('theme/assets/js/main.js')}}"></script>
+    <script src="{{ asset('theme/assets/js/jquery.inputmask.bundle.js')}}"></script>
     <!--end::Page Custom Javascript-->
     <script>
         // Stepper lement
