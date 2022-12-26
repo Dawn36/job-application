@@ -15,7 +15,7 @@ use App\Http\Controllers\DynamicContentPageController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('view_job', [DynamicContentPageController::class, 'jobListing'])->name('view_job');
+Route::get('/', [DynamicContentPageController::class, 'jobListing'])->name('view_job');
 Route::get('job_list', [DynamicContentPageController::class, 'jobListSubmit'])->name('job_list');
 
 Route::post('partner_form', [DynamicContentPageController::class, 'partnerFormSubmit'])->name('partner_form');
@@ -29,9 +29,9 @@ Route::get('/thankyou_page', function () {
 
 
 
-Route::get('/', function () {
-    return redirect('login');
-});
+// Route::get('/', function () {
+//     return redirect('login');
+// });
 Route::middleware(['auth'])->group(function () {
 
     Route::get('partner_listing', [DynamicContentPageController::class, 'partnerListing'])->name('partner_listing');
