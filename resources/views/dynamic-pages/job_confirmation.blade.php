@@ -260,7 +260,60 @@
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">State</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="previous_state" />
+                                                                                {{-- <input type="text" class="form-control form-control-solid" placeholder="" name="previous_state" /> --}}
+                                                                                <select name="previous_state" class="form-control form-control-solid mb-3 mb-lg-0">
+                                                                                    <option value="Alabama">Alabama</option>
+                                                                                    <option value="Alaska">Alaska</option>
+                                                                                    <option value="Arizona">Arizona</option>
+                                                                                    <option value="Arkansas">Arkansas</option>
+                                                                                    <option value="California">California</option>
+                                                                                    <option value="Colorado">Colorado</option>
+                                                                                    <option value="Connecticut">Connecticut</option>
+                                                                                    <option value="Delaware">Delaware</option>
+                                                                                    <option value="District Of Columbia">District Of Columbia</option>
+                                                                                    <option value="Florida">Florida</option>
+                                                                                    <option value="Georgia">Georgia</option>
+                                                                                    <option value="Hawaii">Hawaii</option>
+                                                                                    <option value="Idaho">Idaho</option>
+                                                                                    <option value="Illinois">Illinois</option>
+                                                                                    <option value="Indiana">Indiana</option>
+                                                                                    <option value="Iowa">Iowa</option>
+                                                                                    <option value="Kansas">Kansas</option>
+                                                                                    <option value="Kentucky">Kentucky</option>
+                                                                                    <option value="Louisiana">Louisiana</option>
+                                                                                    <option value="Maine">Maine</option>
+                                                                                    <option value="Maryland">Maryland</option>
+                                                                                    <option value="Massachusetts">Massachusetts</option>
+                                                                                    <option value="Michigan">Michigan</option>
+                                                                                    <option value="Minnesota">Minnesota</option>
+                                                                                    <option value="Mississippi">Mississippi</option>
+                                                                                    <option value="Missouri">Missouri</option>
+                                                                                    <option value="Montana">Montana</option>
+                                                                                    <option value="Nebraska">Nebraska</option>
+                                                                                    <option value="Nevada">Nevada</option>
+                                                                                    <option value="New Hampshire">New Hampshire</option>
+                                                                                    <option value="New Jersey">New Jersey</option>
+                                                                                    <option value="New Mexico">New Mexico</option>
+                                                                                    <option value="New York">New York</option>
+                                                                                    <option value="North Carolina">North Carolina</option>
+                                                                                    <option value="North Dakota">North Dakota</option>
+                                                                                    <option value="Ohio">Ohio</option>
+                                                                                    <option value="Oklahoma">Oklahoma</option>
+                                                                                    <option value="Oregon">Oregon</option>
+                                                                                    <option value="Pennsylvania">Pennsylvania</option>
+                                                                                    <option value="Rhode Island">Rhode Island</option>
+                                                                                    <option value="South Carolina">South Carolina</option>
+                                                                                    <option value="South Dakota">South Dakota</option>
+                                                                                    <option value="Tennessee">Tennessee</option>
+                                                                                    <option value="Texas">Texas</option>
+                                                                                    <option value="Utah">Utah</option>
+                                                                                    <option value="Vermont">Vermont</option>
+                                                                                    <option value="Virginia">Virginia</option>
+                                                                                    <option value="Washington">Washington</option>
+                                                                                    <option value="West Virginia">West Virginia</option>
+                                                                                    <option value="Wisconsin">Wisconsin</option>
+                                                                                    <option value="Wyoming">Wyoming</option>
+                                                                                </select>
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">Zip Code</label>
@@ -282,7 +335,7 @@
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">E-Mail Address</label>
-                                                                                <input class="form-control form-control-solid" placeholder="" name="e_mail_address" />
+                                                                                <input class="form-control form-control-solid" type="email" placeholder="" name="e_mail_address" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row mb-5" style="background-color: #f0f0f0;">
@@ -393,7 +446,7 @@
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="high_school_name" />
                                                                             </div>
                                                                             <div class="col-md-3">
-                                                                                <label class="fs-5 fw-bold mb-2">COURSE OF STUDY</label>
+                                                                                <label class="fs-5 fw-bold mb-2">MAJOR STUDIED</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="high_school_course_of_study" />
                                                                             </div>
                                                                             <div class="col-md-3">
@@ -412,7 +465,7 @@
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="business_school_name" />
                                                                             </div>
                                                                             <div class="col-md-3">
-                                                                                <label class="fs-5 fw-bold mb-2">COURSE OF STUDY</label>
+                                                                                <label class="fs-5 fw-bold mb-2">MAJOR STUDIED</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="business_course_of_study" />
                                                                             </div>
                                                                             <div class="col-md-3">
@@ -431,7 +484,7 @@
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="college_name" />
                                                                             </div>
                                                                             <div class="col-md-3">
-                                                                                <label class="fs-5 fw-bold mb-2">COURSE OF STUDY</label>
+                                                                                <label class="fs-5 fw-bold mb-2">MAJOR STUDIED</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="college_course_of_study" />
                                                                             </div>
                                                                             <div class="col-md-3">
@@ -450,7 +503,7 @@
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="graduate_name" />
                                                                             </div>
                                                                             <div class="col-md-3">
-                                                                                <label class="fs-5 fw-bold mb-2">COURSE OF STUDY</label>
+                                                                                <label class="fs-5 fw-bold mb-2">MAJOR STUDIED</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="graduate_course_of_study" />
                                                                             </div>
                                                                             <div class="col-md-3">
@@ -469,7 +522,7 @@
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="other_name" />
                                                                             </div>
                                                                             <div class="col-md-3">
-                                                                                <label class="fs-5 fw-bold mb-2">COURSE OF STUDY</label>
+                                                                                <label class="fs-5 fw-bold mb-2">MAJOR STUDIED</label>
                                                                                 <input type="text" class="form-control form-control-solid" placeholder="" name="other_course_of_study" />
                                                                             </div>
                                                                             <div class="col-md-3">
@@ -520,7 +573,7 @@
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <label class="fs-5 fw-bold mb-2">Telephone </label>
-                                                                                <input type="text" class="form-control form-control-solid masking" placeholder="" name="e_telephone[]" />
+                                                                                <input type="text" class="form-control form-control-solid " placeholder="" name="e_telephone[] " data-mask="000-000-0000" />
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <label class="fs-5 fw-bold mb-2">Supervisor Name / Contact</label>
@@ -538,11 +591,64 @@
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">State</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="e_state[]" />
+                                                                                {{-- <input type="text" class="form-control form-control-solid" placeholder="" name="e_state[]" /> --}}
+                                                                                <select name="e_state[]" class="form-control form-control-solid mb-3 mb-lg-0">
+                                                                                    <option value="Alabama">Alabama</option>
+                                                                                    <option value="Alaska">Alaska</option>
+                                                                                    <option value="Arizona">Arizona</option>
+                                                                                    <option value="Arkansas">Arkansas</option>
+                                                                                    <option value="California">California</option>
+                                                                                    <option value="Colorado">Colorado</option>
+                                                                                    <option value="Connecticut">Connecticut</option>
+                                                                                    <option value="Delaware">Delaware</option>
+                                                                                    <option value="District Of Columbia">District Of Columbia</option>
+                                                                                    <option value="Florida">Florida</option>
+                                                                                    <option value="Georgia">Georgia</option>
+                                                                                    <option value="Hawaii">Hawaii</option>
+                                                                                    <option value="Idaho">Idaho</option>
+                                                                                    <option value="Illinois">Illinois</option>
+                                                                                    <option value="Indiana">Indiana</option>
+                                                                                    <option value="Iowa">Iowa</option>
+                                                                                    <option value="Kansas">Kansas</option>
+                                                                                    <option value="Kentucky">Kentucky</option>
+                                                                                    <option value="Louisiana">Louisiana</option>
+                                                                                    <option value="Maine">Maine</option>
+                                                                                    <option value="Maryland">Maryland</option>
+                                                                                    <option value="Massachusetts">Massachusetts</option>
+                                                                                    <option value="Michigan">Michigan</option>
+                                                                                    <option value="Minnesota">Minnesota</option>
+                                                                                    <option value="Mississippi">Mississippi</option>
+                                                                                    <option value="Missouri">Missouri</option>
+                                                                                    <option value="Montana">Montana</option>
+                                                                                    <option value="Nebraska">Nebraska</option>
+                                                                                    <option value="Nevada">Nevada</option>
+                                                                                    <option value="New Hampshire">New Hampshire</option>
+                                                                                    <option value="New Jersey">New Jersey</option>
+                                                                                    <option value="New Mexico">New Mexico</option>
+                                                                                    <option value="New York">New York</option>
+                                                                                    <option value="North Carolina">North Carolina</option>
+                                                                                    <option value="North Dakota">North Dakota</option>
+                                                                                    <option value="Ohio">Ohio</option>
+                                                                                    <option value="Oklahoma">Oklahoma</option>
+                                                                                    <option value="Oregon">Oregon</option>
+                                                                                    <option value="Pennsylvania">Pennsylvania</option>
+                                                                                    <option value="Rhode Island">Rhode Island</option>
+                                                                                    <option value="South Carolina">South Carolina</option>
+                                                                                    <option value="South Dakota">South Dakota</option>
+                                                                                    <option value="Tennessee">Tennessee</option>
+                                                                                    <option value="Texas">Texas</option>
+                                                                                    <option value="Utah">Utah</option>
+                                                                                    <option value="Vermont">Vermont</option>
+                                                                                    <option value="Virginia">Virginia</option>
+                                                                                    <option value="Washington">Washington</option>
+                                                                                    <option value="West Virginia">West Virginia</option>
+                                                                                    <option value="Wisconsin">Wisconsin</option>
+                                                                                    <option value="Wyoming">Wyoming</option>
+                                                                                </select>
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">ZIP Code</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="e_zip_code[]" />
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" maxlength="9" onkeypress="return validateNumbers(event)" name="e_zip_code[]" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row mb-5" style="background-color: #f0f0f0;">
@@ -552,11 +658,11 @@
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">From</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="MM-DD-YYYY" name="from[]" />
+                                                                                <input type="text" class="form-control form-control-solid kt_datepicker_2" placeholder="MM-DD-YYYY" name="from[]" />
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">To</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="MM-DD-YYYY" name="to[]" />
+                                                                                <input type="text" class="form-control form-control-solid kt_datepicker_2" placeholder="MM-DD-YYYY" name="to[]" />
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">Starting Salary</label>
@@ -588,7 +694,7 @@
                                                                                 </div>
                                                                                 <div class="col-md-4">
                                                                                     <label class="fs-5 fw-bold mb-2">Telephone </label>
-                                                                                    <input type="text" class="form-control form-control-solid masking" placeholder="" name="e_telephone[]" />
+                                                                                    <input type="text" class="form-control form-control-solid " placeholder="" name="e_telephone[]" data-mask="000-000-0000"/>
                                                                                 </div>
                                                                                 <div class="col-md-4">
                                                                                     <label class="fs-5 fw-bold mb-2">Supervisor Name / Contact</label>
@@ -606,11 +712,64 @@
                                                                                 </div>
                                                                                 <div class="col-md-3">
                                                                                     <label class="fs-5 fw-bold mb-2">State</label>
-                                                                                    <input type="text" class="form-control form-control-solid" placeholder="" name="e_state[]" />
+                                                                                    {{-- <input type="text" class="form-control form-control-solid" placeholder="" name="e_state[]" /> --}}
+                                                                                    <select name="e_state[]" class="form-control form-control-solid mb-3 mb-lg-0">
+                                                                                        <option value="Alabama">Alabama</option>
+                                                                                        <option value="Alaska">Alaska</option>
+                                                                                        <option value="Arizona">Arizona</option>
+                                                                                        <option value="Arkansas">Arkansas</option>
+                                                                                        <option value="California">California</option>
+                                                                                        <option value="Colorado">Colorado</option>
+                                                                                        <option value="Connecticut">Connecticut</option>
+                                                                                        <option value="Delaware">Delaware</option>
+                                                                                        <option value="District Of Columbia">District Of Columbia</option>
+                                                                                        <option value="Florida">Florida</option>
+                                                                                        <option value="Georgia">Georgia</option>
+                                                                                        <option value="Hawaii">Hawaii</option>
+                                                                                        <option value="Idaho">Idaho</option>
+                                                                                        <option value="Illinois">Illinois</option>
+                                                                                        <option value="Indiana">Indiana</option>
+                                                                                        <option value="Iowa">Iowa</option>
+                                                                                        <option value="Kansas">Kansas</option>
+                                                                                        <option value="Kentucky">Kentucky</option>
+                                                                                        <option value="Louisiana">Louisiana</option>
+                                                                                        <option value="Maine">Maine</option>
+                                                                                        <option value="Maryland">Maryland</option>
+                                                                                        <option value="Massachusetts">Massachusetts</option>
+                                                                                        <option value="Michigan">Michigan</option>
+                                                                                        <option value="Minnesota">Minnesota</option>
+                                                                                        <option value="Mississippi">Mississippi</option>
+                                                                                        <option value="Missouri">Missouri</option>
+                                                                                        <option value="Montana">Montana</option>
+                                                                                        <option value="Nebraska">Nebraska</option>
+                                                                                        <option value="Nevada">Nevada</option>
+                                                                                        <option value="New Hampshire">New Hampshire</option>
+                                                                                        <option value="New Jersey">New Jersey</option>
+                                                                                        <option value="New Mexico">New Mexico</option>
+                                                                                        <option value="New York">New York</option>
+                                                                                        <option value="North Carolina">North Carolina</option>
+                                                                                        <option value="North Dakota">North Dakota</option>
+                                                                                        <option value="Ohio">Ohio</option>
+                                                                                        <option value="Oklahoma">Oklahoma</option>
+                                                                                        <option value="Oregon">Oregon</option>
+                                                                                        <option value="Pennsylvania">Pennsylvania</option>
+                                                                                        <option value="Rhode Island">Rhode Island</option>
+                                                                                        <option value="South Carolina">South Carolina</option>
+                                                                                        <option value="South Dakota">South Dakota</option>
+                                                                                        <option value="Tennessee">Tennessee</option>
+                                                                                        <option value="Texas">Texas</option>
+                                                                                        <option value="Utah">Utah</option>
+                                                                                        <option value="Vermont">Vermont</option>
+                                                                                        <option value="Virginia">Virginia</option>
+                                                                                        <option value="Washington">Washington</option>
+                                                                                        <option value="West Virginia">West Virginia</option>
+                                                                                        <option value="Wisconsin">Wisconsin</option>
+                                                                                        <option value="Wyoming">Wyoming</option>
+                                                                                    </select>
                                                                                 </div>
                                                                                 <div class="col-md-3">
                                                                                     <label class="fs-5 fw-bold mb-2">ZIP Code</label>
-                                                                                    <input type="text" class="form-control form-control-solid" placeholder="" name="e_zip_code[]" />
+                                                                                    <input type="text" class="form-control form-control-solid" maxlength="9" onkeypress="return validateNumbers(event)" placeholder="" name="e_zip_code[]" />
                                                                                 </div>
                                                                             </div>
                                                                             <div class="row mb-5">
@@ -620,15 +779,15 @@
                                                                                 </div>
                                                                                 <div class="col-md-3">
                                                                                     <label class="fs-5 fw-bold mb-2">From</label>
-                                                                                    <input type="text" class="form-control form-control-solid" placeholder="MM-DD-YYYY" name="from[]" />
+                                                                                    <input type="text" class="form-control form-control-solid kt_datepicker_2" placeholder="MM-DD-YYYY" name="from[]" />
                                                                                 </div>
                                                                                 <div class="col-md-3">
                                                                                     <label class="fs-5 fw-bold mb-2">To</label>
-                                                                                    <input type="text" class="form-control form-control-solid" placeholder="MM-DD-YYYY" name="to[]" />
+                                                                                    <input type="text" class="form-control form-control-solid kt_datepicker_2" placeholder="MM-DD-YYYY" name="to[]" />
                                                                                 </div>
                                                                                 <div class="col-md-3">
                                                                                     <label class="fs-5 fw-bold mb-2">Starting Salary</label>
-                                                                                    <input type="text" class="form-control form-control-solid" placeholder="" name="starting_salary[]" />
+                                                                                    <input type="text" class="form-control form-control-solid" placeholder="" onkeypress="return validateNumbers(event)" name="starting_salary[]" />
                                                                                 </div>
                                                                             </div>
                                                                             <div class="row mb-4" style="background-color: #f0f0f0;">
@@ -986,7 +1145,12 @@
     <script src="{{ asset('theme/assets/plugins/custom/datatables/datatables.bundle.js')}}"></script>
     <!--end::Page Vendors Javascript-->
     <!--begin::Page Custom Javascript(used by this page)-->
-
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"
+                integrity=
+    "sha256-yE5LLp5HSQ/z+hJeCqkz9hdjNkk1jaiGG0tDCraumnA="
+                crossorigin="anonymous">
+        </script>
     <!--end::Page Custom Javascript-->
     <script>
         // // Stepper lement
@@ -1113,7 +1277,12 @@ var KTCreateAccount = (function() {
                             },
                             zip_code: {
                                 validators: {
-                                    notEmpty: { message: "Zip code is required" },
+                                    notEmpty: { 
+                                        message: "Zip code is required" },
+                                        stringLength: {
+                                        min: 9,
+                                        message: 'The zip code must contains 9 number long',
+                                    },
                                 },
                             },
                             previous_address: {
@@ -1134,6 +1303,10 @@ var KTCreateAccount = (function() {
                             previous_zip_code: {
                                 validators: {
                                     notEmpty: { message: "Previous zip code is required" },
+                                    stringLength: {
+                                        min: 9,
+                                        message: 'The zip code must contains 9 number long',
+                                    },
                                 },
                             },
                             telephone: {
@@ -1192,11 +1365,11 @@ var KTCreateAccount = (function() {
                                     notEmpty: { message: "When Are You Available to Begin Work is required" },
                                 },
                             },
-                            work_overtime: {
-                                validators: {
-                                    notEmpty: { message: "Willing to Work Overtime is required" },
-                                },
-                            },
+                            // work_overtime: {
+                            //     validators: {
+                            //         notEmpty: { message: "Willing to Work Overtime is required" },
+                            //     },
+                            // },
                             authorized_age: {
                                 validators: {
                                     notEmpty: { message: "If hired, can you provide evidence that you are authorized and of legal age to work in the United States is required" },
@@ -1249,7 +1422,7 @@ var KTCreateAccount = (function() {
                             },
                             high_school_course_of_study: {
                                 validators: {
-                                    notEmpty: { message: "Course of study is required" },
+                                    notEmpty: { message: "MAJOR STUDIED is required" },
                                 },
                             },
                             high_school_year_completed: {
@@ -1290,6 +1463,10 @@ var KTCreateAccount = (function() {
                             'e_telephone[]': {
                                 validators: {
                                     notEmpty: { message: "Telephone is required" },
+                                    stringLength: {
+                                        min: 10,
+                                        message: 'The Telephone must contains 10 number long',
+                                    },
                                 },
                             },
                             'address[]': {
@@ -1302,7 +1479,11 @@ var KTCreateAccount = (function() {
                                 validators: { notEmpty: { message: "State is required" } },
                             },
                             'e_zip_code[]': {
-                                validators: { notEmpty: { message: "Zip Code is required" } },
+                                validators: { notEmpty: { message: "Zip Code is required" },
+                                stringLength: {
+                                        min: 9,
+                                        message: 'The zip code must contains 9 number long',
+                                    }, },
                             },
                             'position_held[]': {
                                 validators: { notEmpty: { message: "Position held is required" } },
@@ -1557,7 +1738,7 @@ KTUtil.onDOMContentLoaded(function() {
                 '</div>' +
                 '<div class="col-md-4">' +
                 '<label class="fs-5 fw-bold mb-2">Telephone </label>' +
-                '<input type="text" class="form-control form-control-solid masking" placeholder="" name="e_telephone[]" />' +
+                '<input type="text" class="form-control form-control-solid " placeholder="" name="e_telephone[]" data-mask="000-000-0000" />' +
                 '</div>' +
                 '<div class="col-md-4">' +
                 '<label class="fs-5 fw-bold mb-2">Supervisor Name / Contact</label>' +
@@ -1576,11 +1757,63 @@ KTUtil.onDOMContentLoaded(function() {
                 '</div>' +
                 '<div class="col-md-3">' +
                 '<label class="fs-5 fw-bold mb-2">State</label>' +
-                '<input type="text" class="form-control form-control-solid" placeholder="" name="e_state[]" />' +
+                '<select name="e_state[]" class="form-control form-control-solid mb-3 mb-lg-0">'+
+                '<option value="Alabama">Alabama</option>'+
+                '<option value="Alaska">Alaska</option>'+
+                '<option value="Arizona">Arizona</option>'+
+                '<option value="Arkansas">Arkansas</option>'+
+                '<option value="California">California</option>'+
+                '<option value="Colorado">Colorado</option>'+
+                '<option value="Connecticut">Connecticut</option>'+
+                '<option value="Delaware">Delaware</option>'+
+                '<option value="District Of Columbia">District Of Columbia</option>'+
+                '<option value="Florida">Florida</option>'+
+                '<option value="Georgia">Georgia</option>'+
+                '<option value="Hawaii">Hawaii</option>'+
+                '<option value="Idaho">Idaho</option>'+
+                '<option value="Illinois">Illinois</option>'+
+                '<option value="Indiana">Indiana</option>'+
+                '<option value="Iowa">Iowa</option>'+
+                '<option value="Kansas">Kansas</option>'+
+                '<option value="Kentucky">Kentucky</option>'+
+                '<option value="Louisiana">Louisiana</option>'+
+                '<option value="Maine">Maine</option>'+
+                '<option value="Maryland">Maryland</option>'+
+                '<option value="Massachusetts">Massachusetts</option>'+
+                '<option value="Michigan">Michigan</option>'+
+                '<option value="Minnesota">Minnesota</option>'+
+                '<option value="Mississippi">Mississippi</option>'+
+                '<option value="Missouri">Missouri</option>'+
+                '<option value="Montana">Montana</option>'+
+                '<option value="Nebraska">Nebraska</option>'+
+                '<option value="Nevada">Nevada</option>'+
+                '<option value="New Hampshire">New Hampshire</option>'+
+                '<option value="New Jersey">New Jersey</option>'+
+                '<option value="New Mexico">New Mexico</option>'+
+                '<option value="New York">New York</option>'+
+                '<option value="North Carolina">North Carolina</option>'+
+                '<option value="North Dakota">North Dakota</option>'+
+                '<option value="Ohio">Ohio</option>'+
+                '<option value="Oklahoma">Oklahoma</option>'+
+                '<option value="Oregon">Oregon</option>'+
+                '<option value="Pennsylvania">Pennsylvania</option>'+
+                '<option value="Rhode Island">Rhode Island</option>'+
+                '<option value="South Carolina">South Carolina</option>'+
+                '<option value="South Dakota">South Dakota</option>'+
+                '<option value="Tennessee">Tennessee</option>'+
+                '<option value="Texas">Texas</option>'+
+                '<option value="Utah">Utah</option>'+
+                '<option value="Vermont">Vermont</option>'+
+                '<option value="Virginia">Virginia</option>'+
+                '<option value="Washington">Washington</option>'+
+                '<option value="West Virginia">West Virginia</option>'+
+                '<option value="Wisconsin">Wisconsin</option>'+
+                '<option value="Wyoming">Wyoming</option>'+
+            '</select>'+
                 '</div>' +
                 '<div class="col-md-3">' +
                 '<label class="fs-5 fw-bold mb-2">ZIP Code</label>' +
-                '<input type="text" class="form-control form-control-solid" placeholder="" name="e_zip_code[]" />' +
+                '<input type="text" class="form-control form-control-solid" onkeypress="return validateNumbers(event)" maxlength="9" placeholder="" name="e_zip_code[]" />' +
                 '</div>' +
                 '</div>' +
                 '<div class="row mb-5" style="background-color: #f0f0f0;">' +
@@ -1590,15 +1823,15 @@ KTUtil.onDOMContentLoaded(function() {
                 '</div>' +
                 '<div class="col-md-3">' +
                 '<label class="fs-5 fw-bold mb-2">From</label>' +
-                '<input type="text" class="form-control form-control-solid" placeholder="MM-DD-YYYY" name="from[]" />' +
+                '<input type="text" class="form-control form-control-solid kt_datepicker_2" placeholder="MM-DD-YYYY" name="from[]" />' +
                 '</div>' +
                 '<div class="col-md-3">' +
                 '<label class="fs-5 fw-bold mb-2">To</label>' +
-                '<input type="text" class="form-control form-control-solid" placeholder="MM-DD-YYYY" name="to[]" />' +
+                '<input type="text" class="form-control form-control-solid kt_datepicker_2" placeholder="MM-DD-YYYY" name="to[]" />' +
                 '</div>' +
                 '<div class="col-md-3">' +
                 '<label class="fs-5 fw-bold mb-2">Starting Salary</label>' +
-                '<input type="text" class="form-control form-control-solid" placeholder="" name="starting_salary[]" />' +
+                '<input type="text" class="form-control form-control-solid" onkeypress="return validateNumbers(event)" placeholder="" name="starting_salary[]" />' +
                 '</div>' +
                 '</div>' +
                 '<div class="row mb-5">' +

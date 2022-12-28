@@ -202,7 +202,7 @@
                                             <input type="text" disabled class="form-control form-control-solid" value="{{$jobConfirmation[0]->high_school_name}}" placeholder="" name="school_name_and_location" />
                                         </div>
                                         <div class="col-md-3">
-                                            <label class="fs-5 fw-bold mb-2">COURSE OF STUDY</label>
+                                            <label class="fs-5 fw-bold mb-2">MAJOR STUDIED</label>
                                             <input type="text" disabled class="form-control form-control-solid" value="{{$jobConfirmation[0]->high_school_course_of_study}}" placeholder="" name="course_of_study" />
                                         </div>
                                         <div class="col-md-3">
@@ -221,7 +221,7 @@
                                             <input type="text" disabled class="form-control form-control-solid" value="{{$jobConfirmation[0]->business_school_name}}" placeholder="" name="busines_name_and_location" />
                                         </div>
                                         <div class="col-md-3">
-                                            <label class="fs-5 fw-bold mb-2">COURSE OF STUDY</label>
+                                            <label class="fs-5 fw-bold mb-2">MAJOR STUDIED</label>
                                             <input type="text" disabled class="form-control form-control-solid" value="{{$jobConfirmation[0]->business_course_of_study}}" placeholder="" name="busines_course_of_study" />
                                         </div>
                                         <div class="col-md-3">
@@ -240,7 +240,7 @@
                                             <input type="text" disabled class="form-control form-control-solid" value="{{$jobConfirmation[0]->college_name}}" placeholder="" name="college_name_and_location" />
                                         </div>
                                         <div class="col-md-3">
-                                            <label class="fs-5 fw-bold mb-2">COURSE OF STUDY</label>
+                                            <label class="fs-5 fw-bold mb-2">MAJOR STUDIED</label>
                                             <input type="text" disabled class="form-control form-control-solid" value="{{$jobConfirmation[0]->college_course_of_study}}" placeholder="" name="college_course_of_study" />
                                         </div>
                                         <div class="col-md-3">
@@ -259,7 +259,7 @@
                                             <input type="text" disabled class="form-control form-control-solid" value="{{$jobConfirmation[0]->graduate_name}}" placeholder="" name="graduate_name_and_location" />
                                         </div>
                                         <div class="col-md-3">
-                                            <label class="fs-5 fw-bold mb-2">COURSE OF STUDY</label>
+                                            <label class="fs-5 fw-bold mb-2">MAJOR STUDIED</label>
                                             <input type="text" disabled class="form-control form-control-solid" value="{{$jobConfirmation[0]->graduate_course_of_study}}" placeholder="" name="graduate_course_of_study" />
                                         </div>
                                         <div class="col-md-3">
@@ -278,7 +278,7 @@
                                             <input type="text" disabled class="form-control form-control-solid" value="{{$jobConfirmation[0]->other_name}}" placeholder="" name="other_name_and_location" />
                                         </div>
                                         <div class="col-md-3">
-                                            <label class="fs-5 fw-bold mb-2">COURSE OF STUDY</label>
+                                            <label class="fs-5 fw-bold mb-2">MAJOR STUDIED</label>
                                             <input type="text" disabled class="form-control form-control-solid" value="{{$jobConfirmation[0]->other_course_of_study}}" placeholder="" name="other_course_of_study" />
                                         </div>
                                         <div class="col-md-3">
