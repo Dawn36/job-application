@@ -137,7 +137,7 @@
                                                                         <div class="row mb-5">
                                                                             <div class="col-md-6 fv-row">
                                                                                 <label class="required fs-5 fw-bold mb-2">Email</label>
-                                                                                <input class="form-control form-control-solid" placeholder="" name="email" required/>
+                                                                                <input class="form-control form-control-solid" placeholder="" type="email" name="email" required/>
                                                                             </div>
                                                                             <div class="col-md-6 required fv-row">
                                                                                 <label class="fs-5 fw-bold mb-2">Mobile No</label>

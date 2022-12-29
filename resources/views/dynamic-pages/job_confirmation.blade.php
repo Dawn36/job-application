@@ -246,7 +246,7 @@
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 required fw-bold mb-2">Zip Code</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" onkeypress="return validateNumbers(event)"  maxlength="9" name="zip_code" />
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" onkeypress="return validateNumbers(event)"  maxlength="5" name="zip_code" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row mb-5" style="background-color: #f0f0f0;">
@@ -317,7 +317,7 @@
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">Zip Code</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" onkeypress="return validateNumbers(event)"  maxlength="9" name="previous_zip_code" />
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" onkeypress="return validateNumbers(event)"  maxlength="5" name="previous_zip_code" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row mb-5">
@@ -648,7 +648,7 @@
                                                                             </div>
                                                                             <div class="col-md-3">
                                                                                 <label class="fs-5 fw-bold mb-2">ZIP Code</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" maxlength="9" onkeypress="return validateNumbers(event)" name="e_zip_code[]" />
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" maxlength="5" onkeypress="return validateNumbers(event)" name="e_zip_code[]" />
                                                                             </div>
                                                                         </div>
                                                                         <div class="row mb-5" style="background-color: #f0f0f0;">
@@ -769,7 +769,7 @@
                                                                                 </div>
                                                                                 <div class="col-md-3">
                                                                                     <label class="fs-5 fw-bold mb-2">ZIP Code</label>
-                                                                                    <input type="text" class="form-control form-control-solid" maxlength="9" onkeypress="return validateNumbers(event)" placeholder="" name="e_zip_code[]" />
+                                                                                    <input type="text" class="form-control form-control-solid" maxlength="5" onkeypress="return validateNumbers(event)" placeholder="" name="e_zip_code[]" />
                                                                                 </div>
                                                                             </div>
                                                                             <div class="row mb-5">
@@ -1280,8 +1280,8 @@ var KTCreateAccount = (function() {
                                     notEmpty: { 
                                         message: "Zip code is required" },
                                         stringLength: {
-                                        min: 9,
-                                        message: 'The zip code must contains 9 number long',
+                                        min: 5,
+                                        message: 'The zip code must contains 5 number long',
                                     },
                                 },
                             },
@@ -1304,8 +1304,8 @@ var KTCreateAccount = (function() {
                                 validators: {
                                     notEmpty: { message: "Previous zip code is required" },
                                     stringLength: {
-                                        min: 9,
-                                        message: 'The zip code must contains 9 number long',
+                                        min: 5,
+                                        message: 'The zip code must contains 5 number long',
                                     },
                                 },
                             },
@@ -1321,7 +1321,11 @@ var KTCreateAccount = (function() {
                             },
                             e_mail_address: {
                                 validators: {
-                                    emailAddress: {
+                                    // emailAddress: {
+                                    //     message: 'The value is not a valid email address'
+                                    // },
+                                    regexp: {
+                                        regexp: '^[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+$',
                                         message: 'The value is not a valid email address'
                                     }
                                 },
@@ -1481,8 +1485,8 @@ var KTCreateAccount = (function() {
                             'e_zip_code[]': {
                                 validators: { notEmpty: { message: "Zip Code is required" },
                                 stringLength: {
-                                        min: 9,
-                                        message: 'The zip code must contains 9 number long',
+                                        min: 5,
+                                        message: 'The zip code must contains 5 number long',
                                     }, },
                             },
                             'position_held[]': {
@@ -1813,7 +1817,7 @@ KTUtil.onDOMContentLoaded(function() {
                 '</div>' +
                 '<div class="col-md-3">' +
                 '<label class="fs-5 fw-bold mb-2">ZIP Code</label>' +
-                '<input type="text" class="form-control form-control-solid" onkeypress="return validateNumbers(event)" maxlength="9" placeholder="" name="e_zip_code[]" />' +
+                '<input type="text" class="form-control form-control-solid" onkeypress="return validateNumbers(event)" maxlength="5" placeholder="" name="e_zip_code[]" />' +
                 '</div>' +
                 '</div>' +
                 '<div class="row mb-5" style="background-color: #f0f0f0;">' +
