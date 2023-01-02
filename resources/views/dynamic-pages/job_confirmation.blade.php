@@ -941,7 +941,7 @@
                                                                             </div>
                                                                             <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Phone</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="reference_1_phone" />
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" data-mask="000-000-0000" name="reference_1_phone" />
                                                                             </div>
                                                                             <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Occupation</label>
@@ -964,7 +964,7 @@
                                                                             </div>
                                                                             <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Phone</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="reference_2_phone" />
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" data-mask="000-000-0000" name="reference_2_phone" />
                                                                             </div>
                                                                             <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Occupation</label>
@@ -993,7 +993,7 @@
                                                                             </div>
                                                                             <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Phone</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="professional_reference_1_phone" />
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" data-mask="000-000-0000" name="professional_reference_1_phone" />
                                                                             </div>
                                                                             <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Occupation</label>
@@ -1016,7 +1016,7 @@
                                                                             </div>
                                                                             <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Phone</label>
-                                                                                <input type="text" class="form-control form-control-solid" placeholder="" name="professional_reference_2_phone" />
+                                                                                <input type="text" class="form-control form-control-solid" placeholder="" data-mask="000-000-0000" name="professional_reference_2_phone" />
                                                                             </div>
                                                                             <div class="col-md-3 mb-5">
                                                                                 <label class="fs-5 fw-bold mb-2">Occupation</label>
